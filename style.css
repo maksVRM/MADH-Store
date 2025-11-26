@@ -107,3 +107,27 @@ section {
 .no_bg img {
     max-width: 50%;
 }
+
+/* section text - image women */
+
+.text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.women h3 {
+    color: var(--black);
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    /* cursor: pointer; */
+    height: auto;
+}
+
+.women h3:hover {
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
