@@ -1,0 +1,45 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --font: "Mada", sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: initial;
+    margin-block-end: unset;
+    margin-block-start: unset;
+    /* white-space: pre-line; */
+}
+
+nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 0 20px; */
+    border-bottom: 1px solid var(--black);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+nav a {
+    padding: 12px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.left {
+    display: flex;
+    justify-items: baseline;
+}
+
+.right {
+    display: flex;
+    justify-items: baseline;
+}
