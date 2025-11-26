@@ -94,3 +94,16 @@ section {
     color: rgb(255, 255, 255);
     opacity: 0.8;
 }
+
+
+/* section with 2 images */
+
+.no_bg {
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.no_bg img {
+    max-width: 50%;
+}
