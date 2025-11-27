@@ -131,3 +131,47 @@ section {
     opacity: 0.5;
 }
 
+
+/* section 3 images - discription  */
+
+.forJeans {
+    height: 100vh;
+    background-image: url(assets/Group\ 1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: -176px;
+
+}
+
+.discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    max-width: 100%;
+    margin-bottom: 5%;
+    padding: 0 32px 60px 32px;
+}
+
+.text {
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text a {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+span{
+    max-width: 100%;
+    
+}
