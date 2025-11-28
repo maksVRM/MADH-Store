@@ -24,6 +24,7 @@ nav {
     line-height: 20px;
     position: fixed;
     transition: 0.3s ease;
+    z-index: 3;
 }
 
 .burger-button {
@@ -56,6 +57,8 @@ nav a {
     display: flex;
     justify-items: baseline;
 }
+
+
 
 /* content */
 

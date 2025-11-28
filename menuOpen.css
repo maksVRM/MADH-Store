@@ -1,0 +1,154 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+
+    max-width: 73%;
+    height: 100vh;
+    border-right: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+}
+
+.open {
+    transform: translateX(0%);
+}
+
+.hide{
+    display: none;
+}
+
+.top {
+    /* border: 1px solid black; */
+    /* width: 80%; */
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.top .rHelp {
+    /* border: 1px solid black; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+
+/* left side */
+.linkL {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/* right side */
+.linkR {
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.linkR p,
+.linkL p {
+    margin: 0;
+    transition: 0.5s;
+
+}
+
+.titleM {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+
+
+/* left side */
+.top .Linfo {
+    border-right: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+
+/* bottom */
+.bottom {
+    border: 1px solid black;
+    /* width: 20%; */
+    height: 20%;
+    display: flex;
+    justify-content: start;
+}
+
+.inst {
+    width: 15%;
+    border-right: 1px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inst a {
+    text-decoration: none;
+}
+
+.instCon {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+a .buttonInst {
+    height: 100%;
+}
+
+.buttonInst .instCon {
+    height: 100%;
+}
+
+.instCon p {
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--black);
+    transition: 0.5s;
+}
+
+/* hover */
+
+.instCon p:hover,
+.linkR :hover,
+.linkL :hover{
+    opacity: 0.7;
+}
+
+
+
+/* .inst p{
+   margin-top: 50%;
+}
+
+.bottom  a{
+    width: 15%;
+}
+
+.buttonInst a{
+    width: 100%;
+} */
