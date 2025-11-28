@@ -15,12 +15,30 @@ body {
 
 /* nav bar */
 nav {
-    max-width: 100%;
+    background-color: var(--white);
+    width: 100%;
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid var(--black);
     font-size: 16px;
     line-height: 20px;
+    position: fixed;
+    transition: 0.3s ease;
+}
+
+.burger-button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+.hide {
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
 nav a {
@@ -168,4 +186,4 @@ section {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-} 
+}
