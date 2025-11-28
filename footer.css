@@ -90,6 +90,10 @@ footer a {
     flex-direction: column;
 }
 
+.input .title{
+    margin: 0;
+}
+
 form {
     padding: 16px 0 40px;
 }
