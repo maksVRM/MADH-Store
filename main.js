@@ -14,7 +14,33 @@ window.onscroll = function () {
 
 
 $('.menu-toggle').on('click', function () {
-    $('.menu').toggleClass('open')
+    const menu = $('.menu');
+
+    if (!menu.hasClass('open')) {
+        // ПЕРВОЕ включение: показываем, потом включаем анимацию
+        menu.show(0);                  // заменяет display: none → flex
+        requestAnimationFrame(() => {
+            menu.addClass('open');
+        });
+    } else {
+        // Закрытие: убираем класс, ждём завершения transition, потом скрываем
+        menu.removeClass('open');
+
+        menu.one('transitionend', () => {
+            menu.hide(0);              // display: none
+        });
+    }
+
+    return false;
+});
+
+
+$('.menu-toggle').on('click', function () {
+    // $('.menu').toggleClass('open')
+    $('.container').toggleClass('close')
+    $('.f').toggleClass('close')
+    $('.discription').toggleClass('close')
+
 
     // console.log("works!!!")
     return false
