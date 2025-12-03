@@ -26,7 +26,15 @@ nav {
     transition: 0.3s ease;
     z-index: 3;
 }
-
+nav p{
+    margin: 0;
+}
+nav a p{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: baseline;
+}
 .burger-button {
     border: none;
     background: none;
@@ -57,7 +65,6 @@ nav a {
     display: flex;
     justify-items: baseline;
 }
-
 
 
 /* content */
