@@ -38,7 +38,7 @@ $('.menu-toggle').on('click', function () {
 $('.menu-toggle').on('click', function () {
     // $('.menu').toggleClass('open')
     $('.container').toggleClass('close')
-    $('.f').toggleClass('close')
+    $('footer').toggleClass('close')
     $('.discription').toggleClass('close')
 
 
@@ -68,3 +68,23 @@ icon.addEventListener('click', () => {
     }
     toggled = !toggled
 })
+
+
+
+// carousel
+let index = 0;
+
+function moveSlide(direction) {
+  const slider = document.querySelector('.slider');
+  const images = document.querySelectorAll('.slider img');
+  const imgWidth = images[0].clientWidth;
+
+  index += direction;
+
+  // защита от выхода за границы
+  if (index < 0) index = 0;
+  if (index > images.length - 3) index = images.length - 3;
+
+  slider.style.transform = `translateX(-${index * imgWidth}px)`;
+}
+

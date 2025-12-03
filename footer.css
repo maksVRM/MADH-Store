@@ -1,10 +1,15 @@
 footer {
     background-color: var(--black);
     color: var(--white);
-    padding: 28px 0;
     /* display: flex;
     justify-content: space-between; */
     font-weight: 400;
+}
+
+@media(min-width:1272px) {
+    footer {
+        padding: 28px 0 !important;
+    }
 }
 
 footer a {
@@ -14,23 +19,40 @@ footer a {
 }
 
 
-.foot {
+footer .foot {
     width: 100%;
     display: flex;
     justify-self: center;
-    justify-content: space-around;
-    flex-direction: row;
-
+    box-sizing: border-box;
+    /* justify-content: space-around; */
+    /* flex-direction: row; */
 }
+
+@media(min-width: 1024px) {
+    footer .foot {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 
 /* left side  */
 .contact_info {
     width: 50%;
 }
 
+
+@media(min-width: 1024px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
 .contact {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     width: 50%;
 }
@@ -62,10 +84,7 @@ footer a {
 }
 
 /* links */
-.contact .info {
-    max-width: 50%;
-}
-
+.contact .info,
 .contact .help {
     max-width: 50%;
 }
@@ -90,7 +109,7 @@ footer a {
     flex-direction: column;
 }
 
-.input .title{
+.input .title {
     margin: 0;
 }
 
@@ -114,9 +133,12 @@ form {
     margin: 16px 0 0 0;
 }
 
+form input {
+    width: 100%;
+    box-sizing: border-box;
+}
 
 input {
-    width: 95%;
     padding: 16.5px 14px;
     font-family: 'Quicksand-Medium', sans-serif;
     box-sizing: content-box;
@@ -128,7 +150,7 @@ input {
     font: inheritf;
 }
 
-.button{
+.button {
     /* max-width: 20%; */
     display: flex;
     /* justify-content: end; */
@@ -137,7 +159,7 @@ input {
     font-size: 20px;
 }
 
-form svg{
+form svg {
     margin-top: 5px;
     margin-left: 5px;
     display: flex;

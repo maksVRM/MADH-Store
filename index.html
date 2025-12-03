@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="menuOpen.css">
+    <link rel="stylesheet" href="mediaQuery.css">
 </head>
 
 <body>
@@ -43,22 +44,13 @@
         <div class="right flex baseline">
             <a href="">Search</a>
             <a href="">Bag()</a>
-            <!-- <button class="burger-button menu-toggle" id="button">
-               
-            </button> -->
 
             <a href="#" class="menu-toggle" id="menu-toggle">
-                <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M19.7782 5.63599C20.1687 5.24547 20.1687 4.6123 19.7782 4.22178C19.3877 3.83125 18.7545 3.83125 18.364 4.22178L13.4142 9.17153C12.6332 9.95257 11.3668 9.95257 10.5858 9.17153L5.63604 4.22178C5.24552 3.83125 4.61235 3.83125 4.22183 4.22178C3.8313 4.6123 3.8313 5.24547 4.22183 5.63599L9.17157 10.5857C9.95262 11.3668 9.95262 12.6331 9.17157 13.4142L4.22183 18.3639C3.8313 18.7544 3.8313 19.3876 4.22183 19.7781C4.61235 20.1687 5.24552 20.1687 5.63604 19.7781L10.5858 14.8284C11.3668 14.0473 12.6332 14.0473 13.4142 14.8284L18.364 19.7781C18.7545 20.1687 19.3876 20.1687 19.7782 19.7781C20.1687 19.3876 20.1687 18.7544 19.7782 18.3639L14.8284 13.4142C14.0474 12.6331 14.0474 11.3668 14.8284 10.5857L19.7782 5.63599Z"
-                        fill="black"></path>
-                </svg> -->
-
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="5" width="24" height="2" rx="1" fill="black"></rect>
-                        <rect y="11" width="24" height="2" rx="1" fill="black"></rect>
-                        <rect y="17" width="24" height="2" rx="1" fill="black"></rect>
-                    </svg>
+                    <rect y="5" width="24" height="2" rx="1" fill="black"></rect>
+                    <rect y="11" width="24" height="2" rx="1" fill="black"></rect>
+                    <rect y="17" width="24" height="2" rx="1" fill="black"></rect>
+                </svg>
             </a>
 
         </div>
@@ -156,13 +148,45 @@
         </div>
 
         <!-- section with 2 images -->
-        <div class="container no_bg">
+        <div class="container no_bg man_images">
             <img src="assets/ccf0e04b858eaf30d34e28b73e047ceb66071a97-1200x1600.webp" alt="">
             <img src="assets/5b637f5de756868b97f1ebd1beff1764647fc518-5651x7534.webp" alt="">
         </div>
 
+
+
         <!-- section 3 images - discription -->
-        <div class="container no_bg forJeans">
+        <div class="container no_bg forJeans slideshow-container">
+            <div class="slider-container">
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <div class="slider-wrapper">
+                    <div class=" slider">
+
+                        <img src="assets/white.webp" />
+                        <img src="assets/blue.webp" />
+                        <img src="assets/gray.webp" />
+                        <img src="assets/1.webp" />
+                        <img src="assets/2.webp" />
+                        <img src="assets/3.webp" />
+
+                    </div>
+                </div>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+            </div>
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="images mySlides fade">
+                <img src="assets/white.webp" alt="">
+                <img src="assets/blue.webp" alt="">
+                <img src="assets/gray.webp" alt="">
+            </div>
+
+             <div class="images mySlides fade">
+                <img src="assets/1.webp" alt="">
+                <img src="assets/2.webp" alt="">
+                <img src="assets/3.webp"  alt="">
+            </div> -->
+
             <div class="text">
                 <a href="jeans.html">
                     <h3>jeans</h3>
@@ -178,7 +202,7 @@
 
     <!-- footer -->
 
-    <footer class="f">
+    <footer>
         <section class="foot">
             <!-- left -->
             <!-- contact us -->

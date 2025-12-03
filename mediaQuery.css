@@ -1,0 +1,209 @@
+/* media query */
+
+@media(max-width: 768px) {
+    footer {
+        padding: 16px !important;
+    }
+
+    footer .foot,
+    .contact {
+        /* flex-direction: column; */
+        align-items: center;
+        /* gap: 20px; */
+    }
+
+    .foot {
+        gap: 20px;
+    }
+
+    .contact_info .contact {
+        width: 100%;
+        text-align: center;
+        /* gap: 20px; */
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+        /* justify-content: space-around; */
+        /* gap: 100px; */
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .contact .info,
+    .contact .help {
+        text-align: left;
+    }
+
+    .foot .contact_info,
+    .foot .input {
+        width: 100%;
+        /* padding: 16px; */
+    }
+
+    .instCopyr {
+        flex-direction: column !important;
+    }
+
+    /* .forJeans{
+        height: 430px;
+    } */
+
+}
+
+@media(min-width: 768px) {
+    footer {
+        padding: 16px !important;
+    }
+
+    footer .foot,
+    .contact {
+        /* flex-direction: column; */
+        align-items: center;
+        /* gap: 20px; */
+    }
+
+    .foot {
+        gap: 20px;
+    }
+
+    .contact_info .contact {
+        width: 100%;
+        text-align: center;
+        /* gap: 20px; */
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+        /* justify-content: space-around; */
+        /* gap: 100px; */
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .contact .info,
+    .contact .help {
+        text-align: left;
+    }
+
+    .foot .contact_info,
+    .foot .input {
+        width: 100%;
+        /* padding: 16px; */
+    }
+
+    .instCopyr {
+        flex-direction: column !important;
+    }
+
+}
+
+
+@media(min-width:344px) {
+    footer .foot {
+        width: 100%;
+        box-sizing: content-box;
+        flex-direction: column !important;
+
+    }
+
+    section {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .discription {
+        padding: 16px;
+        text-align: left;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+
+    .images img {
+        width: 30%;
+    }
+
+
+    .forJeans {
+        height: 300px;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+}
+
+@media(min-width:1024px) {
+    footer {
+        padding: 16px !important;
+    }
+
+    footer .foot {
+        display: flex;
+        justify-self: center;
+        justify-content: space-around;
+        flex-direction: row !important;
+        gap: 40px;
+    }
+
+    .contact_info .contact {
+        width: 100%;
+        /* text-align: center; */
+        /* gap: 20px; */
+    }
+
+    section {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .discription {
+        padding: 0;
+        text-align: left;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .contact_info {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 900px) {
+    .discription {
+        padding: 60px 32px;
+        text-align: none;
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    .forJeans {
+        height: 430px;
+    }
+}
+
+
+@media(min-width:1272px) {
+    section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 73%;
+    }
+
+    .slider img {
+        width: 33%;
+    }
+}
