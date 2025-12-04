@@ -18,7 +18,7 @@ $('.menu-toggle').on('click', function () {
 
     if (!menu.hasClass('open')) {
         // ПЕРВОЕ включение: показываем, потом включаем анимацию
-        menu.show(0);                  // заменяет display: none → flex
+        menu.show(0);
         requestAnimationFrame(() => {
             menu.addClass('open');
         });
@@ -75,16 +75,16 @@ icon.addEventListener('click', () => {
 let index = 0;
 
 function moveSlide(direction) {
-  const slider = document.querySelector('.slider');
-  const images = document.querySelectorAll('.slider img');
-  const imgWidth = images[0].clientWidth;
+    const slider = document.querySelector('.slider');
+    const images = document.querySelectorAll('.slider img');
+    const imgWidth = images[0].clientWidth;
 
-  index += direction;
+    index += direction;
 
-  // защита от выхода за границы
-  if (index < 0) index = 0;
-  if (index > images.length - 3) index = images.length - 3;
+    // защита от выхода за границы
+    if (index < 0) index = 0;
+    if (index > images.length - 3) index = images.length - 3;
 
-  slider.style.transform = `translateX(-${index * imgWidth}px)`;
+    slider.style.transform = `translateX(-${index * imgWidth}px)`;
 }
 

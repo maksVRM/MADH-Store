@@ -141,6 +141,10 @@
 
 @media(min-width:1020px) {
 
+    .menu {
+        max-width: 73%;
+    }
+
     .top,
     .Linfo,
     .rHelp {
@@ -174,8 +178,68 @@
     }
 }
 
+/* content */
 
+@media(max-width:1000px) {
+    .women {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
 
+    .text a {
+        width: 100%;
+    }
+
+    .text {
+        box-sizing: border-box;
+        width: 100%;
+        border-top: 1px solid black;
+        /* border-bottom: 1px solid black; */
+        padding: 80px 60px;
+    }
+
+    .container h3 {
+        font-size: 60px;
+    }
+
+    .text a {
+        display: block;
+    }
+}
+
+/* classes for breakpoint */
+
+.onlyDesk {
+    display: none;
+}
+
+.img-responsive {
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+    /* маленькие экраны */
+    .img-responsive {
+        /* width: 100%; */
+        max-width: 100%;
+        height: auto;
+        /* border-bottom: 1px solid red; */
+        /* margin-top: 50px; */
+        object-fit: contain;
+        clear: both;
+
+    }
+}
+
+@media(min-width:1000px) {
+    .onlyDesk {
+        display: block;
+    }
+
+}
 
 
 
@@ -290,6 +354,11 @@
         flex-direction: column !important;
     }
 
+    .forJeans {
+        height: 100vh;
+        max-height: none;
+    }
+
 }
 
 
@@ -318,9 +387,13 @@
         width: 30%;
     }
 
-
     .forJeans {
-        height: 300px;
+        height: auto;
+        max-height: 70vh;
+    }
+
+    .textJ {
+        margin-top: -90%;
     }
 
     .slider img {
@@ -329,7 +402,20 @@
 
 }
 
-@media(min-width:1024px) {
+@media(min-width:1020px) {
+    .textJ {
+        /* margin-top: -28%; */
+        margin-top: -74%;
+
+    }
+}
+
+@media(min-width:1025px) {
+    .textJ {
+        margin-top: -28%;
+    }
+
+
     footer {
         padding: 16px !important;
     }
@@ -378,11 +464,17 @@
         line-height: 56px;
     }
 
+    /* 
     .forJeans {
-        height: 430px;
-    }
+        height: 100vh;
+    } */
 }
 
+@media(min-width:1000px) {
+    .forJeans {
+        height: 80vh;
+    }
+}
 
 @media(min-width:1272px) {
     section {
