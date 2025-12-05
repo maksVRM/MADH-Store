@@ -408,6 +408,11 @@
         margin-top: -74%;
 
     }
+
+    .instCopyr {
+        flex-direction: row !important;
+    }
+
 }
 
 @media(min-width:1025px) {

@@ -1,0 +1,429 @@
+/* navbar */
+
+@media(max-width:680px) {
+    nav {
+        justify-content: space-between;
+        gap: 20px;
+        /* padding: 8px 16px; */
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    /* nav a {
+        padding: 12px 12px 5px;
+        text-align: center;
+    } */
+
+    .dont_show {
+        display: none;
+    }
+
+    .menu {
+        max-width: 100%;
+        /* margin-top: 40px; */
+    }
+
+    .top {
+        justify-content: column;
+    }
+
+    .top,
+    .Linfo,
+    .rHelp {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Linfo {
+        border: none !important;
+    }
+
+    .top .Linfo,
+    .top .rHelp {
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    .rHelp {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .linkR,
+    .linkL {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+
+    .extra_container {
+        margin-top: 40px;
+    }
+
+    .extra_container p {
+        font-size: 32;
+        line-height: 32px;
+        font-weight: 700;
+    }
+
+    .inst {
+        border-right: none;
+        width: 30%;
+    }
+}
+
+@media(min-width:760px) {
+    .top .extra_container {
+        display: none;
+    }
+}
+
+
+
+@media(min-width:760px) {
+
+    .top,
+    .Linfo,
+    .rHelp {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Linfo {
+        border: none !important;
+        margin-top: 40px;
+    }
+
+    .top .Linfo,
+    .top .rHelp {
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    .rHelp {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .menu {
+        max-width: 100%;
+    }
+
+    .top {
+        justify-content: end;
+
+    }
+
+    .inst {
+        border-right: none;
+        width: 30%;
+    }
+
+    .linkR,
+    .linkL {
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    .linkL {
+        font-weight: 400;
+    }
+}
+
+@media(min-width:1020px) {
+
+    .menu {
+        max-width: 73%;
+    }
+
+    .top,
+    .Linfo,
+    .rHelp {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .Linfo {
+        border-right: 1px solid black !important;
+    }
+
+    .linkR {
+        font-size: 56px;
+        line-height: 56px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    .linkL {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    .inst {
+        border-right: 1px solid black;
+        width: 15%;
+    }
+}
+
+/* menu */
+@media(min-width:1020px) {
+
+    .menu {
+        width: 100%;
+    }
+}
+
+
+
+/* footer */
+
+@media(max-width: 768px) {
+    footer {
+        padding: 16px !important;
+    }
+
+    footer .foot,
+    .contact {
+        /* flex-direction: column; */
+        align-items: center;
+        /* gap: 20px; */
+    }
+
+    .foot {
+        gap: 20px;
+    }
+
+    .contact_info .contact {
+        width: 100%;
+        text-align: center;
+        /* gap: 20px; */
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+        /* justify-content: space-around; */
+        /* gap: 100px; */
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .contact .info,
+    .contact .help {
+        text-align: left;
+    }
+
+    .foot .contact_info,
+    .foot .input {
+        width: 100%;
+        /* padding: 16px; */
+    }
+
+    .instCopyr {
+        flex-direction: column !important;
+    }
+
+    /* .forJeans{
+        height: 430px;
+    } */
+
+}
+
+@media(min-width: 768px) {
+    footer {
+        padding: 16px !important;
+    }
+
+    footer .foot,
+    .contact {
+        /* flex-direction: column; */
+        align-items: center;
+        /* gap: 20px; */
+    }
+
+    .foot {
+        gap: 20px;
+    }
+
+    .contact_info .contact {
+        width: 100%;
+        text-align: center;
+        /* gap: 20px; */
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+        /* justify-content: space-around; */
+        /* gap: 100px; */
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .contact .info,
+    .contact .help {
+        text-align: left;
+    }
+
+    .foot .contact_info,
+    .foot .input {
+        width: 100%;
+        /* padding: 16px; */
+    }
+
+    .instCopyr {
+        flex-direction: column ;
+    }
+
+    .forJeans {
+        height: 100vh;
+        max-height: none;
+    }
+
+}
+
+@media(min-width:1000px){}
+
+@media(min-width:344px) {
+    footer .foot {
+        width: 100%;
+        box-sizing: content-box;
+        flex-direction: column !important;
+
+    }
+
+    section {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .discription {
+        padding: 16px;
+        text-align: left;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+
+    .images img {
+        width: 30%;
+    }
+
+    .forJeans {
+        height: auto;
+        max-height: 70vh;
+    }
+
+    .textJ {
+        margin-top: -90%;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+}
+
+@media(min-width:1020px) {
+    .textJ {
+        /* margin-top: -28%; */
+        margin-top: -74%;
+
+    }
+}
+
+@media(min-width:1025px) {
+    .textJ {
+        margin-top: -28%;
+    }
+
+
+    footer {
+        padding: 16px !important;
+    }
+
+    footer .foot {
+        display: flex;
+        justify-self: center;
+        justify-content: space-around;
+        flex-direction: row !important;
+        gap: 40px;
+    }
+
+    .contact_info .contact {
+        width: 100%;
+        /* text-align: center; */
+        /* gap: 20px; */
+    }
+
+    section {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .discription {
+        padding: 0;
+        text-align: left;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .contact_info {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 900px) {
+    .discription {
+        padding: 60px 32px;
+        text-align: none;
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    /* 
+    .forJeans {
+        height: 100vh;
+    } */
+}
+
+@media(min-width:1000px) {
+    .forJeans {
+        height: 80vh;
+    }
+}
+
+/* @media(min-width:1272px) {
+    section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 73%;
+    }
+
+    .slider img {
+        width: 33%;
+    }
+} */
+

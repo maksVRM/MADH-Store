@@ -22,7 +22,7 @@ nav {
     border-bottom: 1px solid var(--black);
     font-size: 16px;
     line-height: 20px;
-    position: fixed;
+    position: sticky;
     transition: 0.3s ease;
     z-index: 3;
 }

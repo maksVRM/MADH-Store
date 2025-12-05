@@ -36,13 +36,9 @@ $('.menu-toggle').on('click', function () {
 
 
 $('.menu-toggle').on('click', function () {
-    // $('.menu').toggleClass('open')
-    $('.container').toggleClass('close')
     $('footer').toggleClass('close')
-    $('.discription').toggleClass('close')
+    $('section').toggleClass('close')
 
-
-    // console.log("works!!!")
     return false
 })
 
