@@ -9,7 +9,7 @@
 /* container with settings of outfit */
 .style {
     width: 55%;
-    /* height: 100vh; */
+    height: 99vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -80,21 +80,24 @@
 
 /* mid */
 .gender {
-    width: 30%;
+    width: 28%;
+    height: 99vh;
     border-right: 1px solid black;
     display: flex;
     flex-direction: column;
 }
 
-.gend p{
+.gend p {
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
     margin: 0;
 }
+
 .gend .gender {
     width: 100%;
 }
+
 .gend {
     /* width: 33.3%; */
     height: 33.3vh;
@@ -102,16 +105,39 @@
     border-bottom: 1px solid black;
 }
 
+.selectedG{
+    background-color: #B9B9B9;
+}
+
+/* buttton */
 .buttonNext {
+    padding: 24px 8px;
     border-right: 1px solid black;
+}
+
+.buttonNext button {
+    background-color: var(--white);
+    border: none;
+    font-size: 20px;
+    line-height: 24px;
+    writing-mode: vertical-lr;
+    display: flex;
+    flex-direction: row;
+
+}
+
+button p {
+    margin: 0;
 }
 
 
 /* left */
 .image_of_outfit {
+    height: 99vh;
     width: 60%;
 }
 
 .image_of_outfit img {
     width: 100%;
+    height: 100%;
 }
