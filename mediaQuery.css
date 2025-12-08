@@ -1,5 +1,4 @@
 /* navbar */
-
 @media(max-width:680px) {
     nav {
         justify-content: space-between;
@@ -9,18 +8,12 @@
         max-width: 100vw;
     }
 
-    /* nav a {
-        padding: 12px 12px 5px;
-        text-align: center;
-    } */
-
     .dont_show {
         display: none;
     }
 
     .menu {
         max-width: 100%;
-        /* margin-top: 40px; */
     }
 
     .top {
@@ -77,15 +70,13 @@
     }
 }
 
+
+
 @media(min-width:760px) {
+
     .top .extra_container {
         display: none;
     }
-}
-
-
-
-@media(min-width:760px) {
 
     .top,
     .Linfo,
@@ -208,7 +199,6 @@
 }
 
 /* classes for breakpoint */
-
 .onlyDesk {
     display: none;
 }
@@ -221,13 +211,9 @@
 
 @media (max-width: 768px) {
 
-    /* маленькие экраны */
     .img-responsive {
-        /* width: 100%; */
         max-width: 100%;
         height: auto;
-        /* border-bottom: 1px solid red; */
-        /* margin-top: 50px; */
         object-fit: contain;
         clear: both;
 
@@ -243,13 +229,6 @@
 
 
 
-
-
-
-
-
-
-
 /* footer */
 
 @media(max-width: 768px) {
@@ -259,9 +238,7 @@
 
     footer .foot,
     .contact {
-        /* flex-direction: column; */
         align-items: center;
-        /* gap: 20px; */
     }
 
     .foot {
@@ -271,14 +248,11 @@
     .contact_info .contact {
         width: 100%;
         text-align: center;
-        /* gap: 20px; */
     }
 
     .contact {
         width: 100%;
         text-align: center;
-        /* justify-content: space-around; */
-        /* gap: 100px; */
     }
 
     .title {

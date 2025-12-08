@@ -135,23 +135,8 @@ a .buttonInst {
 }
 
 /* hover */
-
 .instCon p:hover,
 .linkR :hover,
 .linkL :hover {
     opacity: 0.7;
 }
-
-
-
-/* .inst p{
-   margin-top: 50%;
-}
-
-.bottom  a{
-    width: 15%;
-}
-
-.buttonInst a{
-    width: 100%;
-} */

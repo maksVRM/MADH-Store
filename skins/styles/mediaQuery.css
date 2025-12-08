@@ -4,15 +4,9 @@
     nav {
         justify-content: space-between;
         gap: 20px;
-        /* padding: 8px 16px; */
         width: 100%;
         max-width: 100vw;
     }
-
-    /* nav a {
-        padding: 12px 12px 5px;
-        text-align: center;
-    } */
 
     .dont_show {
         display: none;
@@ -20,7 +14,6 @@
 
     .menu {
         max-width: 100%;
-        /* margin-top: 40px; */
     }
 
     .top {
@@ -197,9 +190,7 @@
 
     footer .foot,
     .contact {
-        /* flex-direction: column; */
         align-items: center;
-        /* gap: 20px; */
     }
 
     .foot {
@@ -209,14 +200,11 @@
     .contact_info .contact {
         width: 100%;
         text-align: center;
-        /* gap: 20px; */
     }
 
     .contact {
         width: 100%;
         text-align: center;
-        /* justify-content: space-around; */
-        /* gap: 100px; */
     }
 
     .title {
@@ -231,16 +219,11 @@
     .foot .contact_info,
     .foot .input {
         width: 100%;
-        /* padding: 16px; */
     }
 
     .instCopyr {
         flex-direction: column !important;
     }
-
-    /* .forJeans{
-        height: 430px;
-    } */
 
 }
 
@@ -251,9 +234,7 @@
 
     footer .foot,
     .contact {
-        /* flex-direction: column; */
         align-items: center;
-        /* gap: 20px; */
     }
 
     .foot {
@@ -263,14 +244,11 @@
     .contact_info .contact {
         width: 100%;
         text-align: center;
-        /* gap: 20px; */
     }
 
     .contact {
         width: 100%;
         text-align: center;
-        /* justify-content: space-around; */
-        /* gap: 100px; */
     }
 
     .title {
@@ -285,7 +263,6 @@
     .foot .contact_info,
     .foot .input {
         width: 100%;
-        /* padding: 16px; */
     }
 
     .instCopyr {
@@ -343,7 +320,6 @@
 
 @media(min-width:1020px) {
     .textJ {
-        /* margin-top: -28%; */
         margin-top: -74%;
 
     }
@@ -369,8 +345,6 @@
 
     .contact_info .contact {
         width: 100%;
-        /* text-align: center; */
-        /* gap: 20px; */
     }
 
     section {
@@ -403,10 +377,6 @@
         line-height: 56px;
     }
 
-    /* 
-    .forJeans {
-        height: 100vh;
-    } */
 }
 
 @media(min-width:1000px) {
