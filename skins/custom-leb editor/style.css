@@ -6,6 +6,7 @@
 
 }
 
+/* container with settings of outfit */
 .style {
     width: 55%;
     /* height: 100vh; */
@@ -85,9 +86,20 @@
     flex-direction: column;
 }
 
+.gend p{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+.gend .gender {
+    width: 100%;
+}
 .gend {
-    width: 33.3%;
+    /* width: 33.3%; */
     height: 33.3vh;
+    padding: 16px 24px;
+    border-bottom: 1px solid black;
 }
 
 .buttonNext {
