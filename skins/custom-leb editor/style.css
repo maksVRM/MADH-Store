@@ -1,0 +1,24 @@
+/* right */
+.settings_of_style {
+    width: 40%;
+}
+
+.container_for_gender_style {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+
+/* left */
+.image_of_outfit {
+    width: 60%;
+}
+
+.image_of_outfit img {
+    width: 100%;
+}
