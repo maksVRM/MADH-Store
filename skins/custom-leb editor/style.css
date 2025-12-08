@@ -140,4 +140,87 @@ button p {
 .image_of_outfit img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+}
+
+
+/* extra container for page, which will be show only at display smaller 1199px */
+.sm1199px {
+    display: none;
+    /* width: 100%; */
+    flex-direction: column;
+}
+
+.heading_of_the_top {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 16px 20px;
+}
+
+.heading_of_the_top p {
+    margin: 0;
+}
+
+.image_center img {
+    width: 100%;
+}
+
+.custom_settings_bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.list_of_filter {
+    display: flex;
+    flex-direction: row;
+}
+
+.lf {
+    width: 100%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    padding: 4px 0 4px 8px;
+    display: flex;
+    justify-content: start;
+}
+
+.lf p {
+    margin: 0;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+}
+
+.filterSM {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    flex: 0 0 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+
+.filterSM p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* media query */
+@media(max-width:1199px) {
+    .more1199px {
+        display: none;
+    }
+
+    .sm1199px {
+        display: flex;
+    }
+
+    .AddToCart button {
+        padding: 8px 8px;
+    }
 }
