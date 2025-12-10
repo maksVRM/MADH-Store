@@ -103,7 +103,7 @@ h3 {
     border-top: 1px solid black;
 }
 
-.accordion{
+.accordion {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -118,16 +118,40 @@ h3 {
     padding: 28px 20px;
 }
 
-.panel{
+.panel {
     overflow: hidden;
-    padding: 20px 28px;
+    padding: 0 28px;
     font-size: 16px;
     line-height: 20px;
     text-align: left;
-    display: none;
+    transition: all 1s ease;    
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    white-space: pre-line;
+
+    max-height: 0;
+    transition: max-height 0.3s ease;
 }
+
+ .open {
+    opacity: 1;
+    padding: 20px 28px;
+    border-top: 1px solid black;
+    /* background-color: #00a5ff; */
+
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion.active .icon {
+  transform: rotate(180deg);          /* rotate to 180 */
+}
+
 .details,
-.sizeFit{
+.sizeFit {
     border-top: 1px solid black;
 }
 

@@ -9,15 +9,15 @@
     margin-right: auto;
     z-index: 2;
 
-    transform: translateY(-100%); /* скрыто */
+    transform: translateY(-100%);
     transition: transform 0.5s ease;
 
-    display: none; /* скрыто до первого открытия */
+    display: none; 
 }
 
 .menu.open {
-    display: flex;            /* показать */
-    transform: translateY(0); /* анимация */
+    display: flex;            
+    transform: translateY(0); 
 }
 
 .close {
