@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+img{
+    height: 100vh;
+}
+
 .settings_of_jeans {
     width: 50%;
     display: flex;
