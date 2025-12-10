@@ -1,3 +1,163 @@
+.image {
+    width: 50%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+}
+
+.settings_of_jeans {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Top {
+    padding: 28px 20px 0;
+
+}
+
+.Top h3 {
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Top p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8vh;
+    white-space: pre-line;
+}
+
+p,
+h3 {
+    margin: 0;
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 20px;
+}
+
+.width,
+.length {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleW p,
+.titleL p {
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.blocks {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.block:hover {
+    background-color: #ededed;
+    color: #00a5ff;
+}
+
+.AddToCart button {
+    padding: 24px 20px;
+    width: 100%;
+    border: 0;
+    background-color: #b9b9b9;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-top: 1px solid black;
+}
+
+.accordion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: initial;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 28px 20px;
+}
+
+.panel{
+    overflow: hidden;
+    padding: 20px 28px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    display: none;
+}
+.details,
+.sizeFit{
+    border-top: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     background-color: #00a5ff;
 }
