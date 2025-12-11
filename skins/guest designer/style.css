@@ -172,7 +172,8 @@ h3 {
 .table {
     display: flex;
     flex-direction: row;
-    border-top: 1px solid black;
+    width: 100%;
+    /* border-top: 1px solid black; */
 }
 
 .sizeFit .table {
@@ -234,6 +235,8 @@ h3 {
 
 .whithoutPad {
     padding: 0;
+    display: flex;
+    /* max-height: fit-content; */
 }
 
 .blockBlack {
@@ -252,7 +255,7 @@ h3 {
 
 .blockBlack h3 {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
     font-weight: 400;
     text-align: justify;
 
