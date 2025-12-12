@@ -1,3 +1,23 @@
+/* menu */
+.menu {
+    height: 100vh;
+}
+
+
+
+
+@media(max-width:1024px) {
+
+  
+    /* content */
+    section {
+        max-width: 100% !important;
+        width: 100%;
+    }
+}
+
+
+/* content */
 .Content {
     display: flex;
     flex-direction: column;
@@ -44,7 +64,7 @@
 }
 
 
-p {
+.InfoFilter p {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
@@ -69,6 +89,7 @@ h3 {
 .product p {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
 }
 
 .product a {
@@ -96,9 +117,25 @@ a {
 }
 
 @media (max-width: 768px) {
-    .item {
-        flex: 0 0 100%;
+    .listProducts {
+        grid-template-columns: 1fr;
+
     }
+
+    .Title {
+        font-size: 37px;
+        line-height: 55.5px;
+    }
+
+    section {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .Content .listProducts {
+        width: 100%;
+    }
+
 }
 
 

@@ -135,7 +135,7 @@
 @media(min-width:1020px) {
 
     .menu {
-        max-width: 73%;
+        max-width: 100%;
     }
 
     .top,
@@ -146,6 +146,7 @@
     }
 
     .Linfo {
+        margin: 0;
         border-right: 1px solid black !important;
     }
 
