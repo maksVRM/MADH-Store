@@ -131,6 +131,17 @@
     }
 }
 
+@media(min-width:1025px) {
+    .menu {
+        width: 73%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 !important;
+    }
+}
+
+
+
 @media(min-width:1020px) {
 
     .menu {
@@ -144,7 +155,7 @@
         width: 100%;
     }
 
-    .rHelp{
+    .rHelp {
         border-left: 1px solid black;
     }
 

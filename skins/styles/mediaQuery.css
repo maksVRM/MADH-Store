@@ -180,6 +180,15 @@
     }
 }
 
+@media(min-width:1025px){
+    .menu{
+        max-width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 !important;
+    }
+}
+
 
 
 /* footer */
