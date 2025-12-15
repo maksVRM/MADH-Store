@@ -583,11 +583,61 @@ h3 {
         border-bottom: 1px solid black;
     }
 
-    .scrollImage{
+    .scrollImage {
         border-right: 1px solid black;
 
     }
 }
+
+
+/*  carousel of text "You may also like "  */
+
+.carousel {
+    max-width: 73%;
+    /* border-right: 1px solid var(--black);
+    border-left: 1px solid var(--black); */
+    border: 1px solid black;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.infinite-carousel {
+    max-width: 100%;
+    width: 100%;
+
+    /* border: 1px solid black; */
+}
+
+.infinite-carousel .carousel-inner {
+    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+
+    list-style: none;
+    animation: move 20s linear infinite;
+}
+
+.infinite-carousel p {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+@keyframes move {
+    to {
+        transform:
+            translate(calc(-50% - 0.5rem));
+    }
+}
+
+/* footer */
 
 footer {
     background-color: #00a5ff;
