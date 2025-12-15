@@ -69,15 +69,9 @@ section {
     flex: 0 0 100%;
     /* image 100% width */
     scroll-snap-align: start;
-    /* фиксируем на краю */
     display: flex;
-    /* justify-content: center; */
-
-
     justify-content: center;
-    /* горизонтальное центрирование */
     align-items: center;
-    /* вертикальное центрирование */
     height: 100%;
 }
 
@@ -87,6 +81,26 @@ section {
     object-fit: contain;
 }
 
+
+/* scroll text */
+.scrollText {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: start;
+    /* height: 100vh; */
+    /* margin-bottom: 0; */
+    /* position: absolute; */
+    font-size: 20px;
+    line-height: 20px;
+    /* right: unset; */
+    left: 0px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
 
 
 
@@ -314,13 +328,13 @@ h3 {
     padding: 20px;
 }
 
-.example .circles{
+.example .circles {
     width: 100%;
 }
 
 .circles {
     max-width: 350px;
-    display: flex;
+    display: none;
     flex-direction: row;
     position: absolute;
     margin-top: 62px;
@@ -337,6 +351,10 @@ h3 {
     justify-content: center;
     margin: 0 8px 8px 0;
 
+}
+
+.circles.visible {
+    display: flex; /* Показывается, когда добавлен класс visible */
 }
 
 .circleWidthLetter p {
