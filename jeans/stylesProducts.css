@@ -636,7 +636,7 @@ h3 {
     }
 }
 
-.page_product_bottom{
+.page_product_bottom {
     max-width: 73%;
     /* border-right: 1px solid var(--black);
     border-left: 1px solid var(--black); */
@@ -645,7 +645,32 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     /* padding: 20px 0; */
-} 
+}
+
+/* media query */
+@media(max-width:1025px) {
+   
+    .carousel {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .infinite-carousel p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .page_product_bottom {
+        margin: 0;
+        max-width: 100%;
+    }
+
+     .product{
+        max-width: 100% !important;
+    }
+
+}
+
 
 /* footer */
 footer {
