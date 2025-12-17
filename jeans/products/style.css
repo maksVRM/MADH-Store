@@ -11,6 +11,7 @@
     grid-area: 1/1;
     transition: opacity 0.5s ease;
     object-fit: cover;
+    max-height: fit-content;
 }
 
 .product-link {
@@ -29,3 +30,18 @@
 .product:hover .default {
     opacity: 0;
 }
+
+.products_bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+}
+
+.page_product_bottom .products_bottom {
+    width: 100% !important;
+}
+
+.moreThen35 {
+    max-width: 40% !important;
+}
+
