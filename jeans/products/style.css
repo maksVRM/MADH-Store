@@ -1,0 +1,31 @@
+.product {
+    max-width: 35% !important;
+    /* height: 100% !important; */
+    border-left: none !important;
+    border-top: none !important;
+    border-right: 1px solid black;
+    display: grid;
+}
+
+.product img {
+    grid-area: 1/1;
+    transition: opacity 0.5s ease;
+    object-fit: cover;
+}
+
+.product-link {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.hover {
+    opacity: 0;
+}
+
+.product:hover .hover {
+    opacity: 1;
+}
+
+.product:hover .default {
+    opacity: 0;
+}
