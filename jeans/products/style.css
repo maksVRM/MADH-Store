@@ -37,6 +37,24 @@
     width: 100% !important;
 }
 
+.products_bottom_GRID {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+@media(max-width:1025px){
+    .products_bottom_GRID {
+        grid-template-columns: none;
+    }
+}
+
+.products_bottom_GRID .product {
+    max-width: 100% !important;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
 .page_product_bottom .products_bottom {
     width: 100% !important;
 }
