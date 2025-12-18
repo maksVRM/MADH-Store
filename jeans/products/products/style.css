@@ -471,11 +471,9 @@ section {
     max-width: 100%;
 }
 
-/* Окно, в котором видно только 3 фото */
+
 .forJeans {
-    /* width: 100%; */
     overflow: hidden;
-    /* скрывает остальные */
 }
 
 /* Лента изображений */
@@ -515,7 +513,8 @@ section {
 }
 
 .circles {
-    margin-top: 105px;
+    /* margin-top: 105px; */
+    margin-top: 62px;
     margin-left: 20px;
 }
 

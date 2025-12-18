@@ -62,3 +62,8 @@
 .moreThen35 {
     max-width: 40% !important;
 }
+
+.circles {
+    margin-top: 60px ;
+    margin-left: 20px;
+}

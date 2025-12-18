@@ -358,7 +358,8 @@ h3 {
     display: none;
     flex-direction: row;
     position: absolute;
-    margin-top: 62px;
+    margin-top: 105px;
+    /* margin-top: 62px; */
     margin-left: 20px;
 }
 
