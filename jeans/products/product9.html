@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../footer.css">
+    <link rel="stylesheet" href="../styles/footerSkins.css">
+    <link rel="stylesheet" href="../../mediaQuery.css">
+    <link rel="stylesheet" href="menuOpen.css">
+    <link rel="stylesheet" href="../menuMediaQuery.css">
+    <link rel="stylesheet" href="../stylesProducts.css">
+    <link rel="stylesheet" href="style_for_page_width_normalTable.css">
+
+    <link rel="stylesheet" href="products/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="nav" id="navbar">
+        <div class="left flex baseline">
+            <a href="../../index.html">
+                <svg width='71' height='17' viewBox='0 0 71 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                    <path
+                        d='M16.7244 0.0327873C15.7674 0.0327873 15.1294 0.504697 14.6737 1.42605L10.9369 8.84178C10.4812 9.71818 9.93436 10.1451 9.18245 10.1451C8.40775 10.1451 7.90647 9.69571 7.47355 8.84178L3.80513 1.60582C3.25829 0.504697 2.71144 0.0327873 1.75446 0.0327873C0.706342 0.0327873 0 0.751889 0 1.7856V14.6845C0 15.5384 0.432919 16.0328 1.29876 16.0328C2.1646 16.0328 2.59752 15.5384 2.59752 14.6845V7.65076C2.59752 7.11144 2.80258 6.8193 3.16715 6.8193C3.44057 6.8193 3.64564 6.99908 3.80513 7.31369L7.70141 14.9092C7.97483 15.426 8.33939 16.0328 9.15966 16.0328C10.0255 16.0328 10.3445 15.4935 10.6179 14.9766L14.5598 7.31369C14.7193 7.02155 14.9015 6.8193 15.2205 6.8193C15.5851 6.8193 15.7674 7.15638 15.7674 7.58335V14.6845C15.7674 15.5384 16.2231 16.0328 17.0889 16.0328C17.9548 16.0328 18.3649 15.5384 18.3649 14.6845V1.7856C18.3649 0.751889 17.7725 0.0327873 16.7244 0.0327873Z'
+                        fill='black'></path>
+                    <path
+                        d='M22.575 16.0328C23.2699 16.0328 23.6801 15.5721 23.8965 15.1114L24.694 13.4036C25.0358 12.662 25.708 12.0103 26.927 12.0103H31.5296C32.7828 12.0103 33.4663 12.662 33.8081 13.4036L34.5828 15.1114C34.8221 15.6395 35.2778 16.0328 35.9043 16.0328C36.6335 16.0328 37.112 15.5159 37.112 14.8867C37.112 14.6395 37.0436 14.3923 36.9525 14.1901L31.3245 1.65077C30.8802 0.662001 30.1397 0.0327873 29.2966 0.0327873H29.1827C28.3624 0.0327873 27.5991 0.650764 27.1548 1.62829L21.5041 14.1901C21.4129 14.3923 21.3674 14.6058 21.3674 14.7968C21.3674 15.426 21.8003 16.0328 22.575 16.0328ZM26.8358 8.79683C26.8358 8.662 26.8586 8.52717 26.927 8.36987L28.1346 5.62829C28.4194 4.97661 28.8068 4.70694 29.2283 4.70694C29.7637 4.70694 30.0827 5.0665 30.322 5.62829L31.484 8.36987C31.5524 8.52717 31.5979 8.71818 31.5979 8.8193C31.5979 9.3811 31.1878 9.80807 30.6182 9.80807H27.8612C27.2915 9.80807 26.8358 9.35863 26.8358 8.79683Z'
+                        fill='black'></path>
+                    <path
+                        d='M40.118 2.19009V13.8755C40.118 15.1789 40.8471 15.898 42.1687 15.898H45.951C51.26 15.898 54.1993 13.2013 54.1993 8.03279C54.1993 2.86425 51.26 0.167619 45.951 0.167619H42.1687C40.8471 0.167619 40.118 0.88672 40.118 2.19009ZM42.7611 11.4935V4.57211C42.7611 3.31369 43.5586 2.54964 45.0168 2.54964H46.2472C49.7562 2.54964 51.4651 4.43728 51.4651 8.03279C51.4651 11.4036 49.7562 13.5159 46.2472 13.5159H45.0168C43.5586 13.5159 42.7611 12.7744 42.7611 11.4935Z'
+                        fill='black'></path>
+                    <path
+                        d='M69.6785 0.0327873C68.8126 0.0327873 68.3569 0.549641 68.3569 1.40357V3.62829C68.3569 5.3811 67.286 6.43728 65.486 6.43728H62.8429C60.9745 6.43728 59.972 5.3811 59.972 3.60582V1.40357C59.972 0.549641 59.5163 0.0327873 58.6504 0.0327873C57.7846 0.0327873 57.3289 0.549641 57.3289 1.40357V14.662C57.3289 15.5159 57.7846 16.0328 58.6504 16.0328C59.5163 16.0328 59.972 15.5159 59.972 14.662V11.6283C59.972 9.87548 61.0429 8.79683 62.8429 8.79683H65.486C67.286 8.79683 68.3569 9.87548 68.3569 11.6283V14.662C68.3569 15.5159 68.8126 16.0328 69.6785 16.0328C70.5443 16.0328 71 15.5159 71 14.662V1.40357C71 0.549641 70.5443 0.0327873 69.6785 0.0327873Z'
+                        fill='black'></path>
+                </svg>
+            </a>
+            <a class="dont_show" href="../../skins/skins.html">
+                <p>Skins</p>
+            </a>
+            <a class="dont_show" href="../../jeans/index.html">
+                <p>Jeans</p>
+            </a>
+            <a class="dont_show" href="">
+                <p>Women</p>
+            </a>
+            <a class="dont_show" href="">
+                <p>Unisex</p>
+            </a>
+            <a class="dont_show" href="">
+                <p>Men</p>
+            </a>
+            <a class="dont_show" href="">
+                <p>Colab</p>
+            </a>
+        </div>
+
+        <div class="right flex baseline">
+            <a href="">Search</a>
+            <a href="">Bag()</a>
+
+            <a href="#" class="menu-toggle" id="menu-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="5" width="24" height="2" rx="1" fill="black"></rect>
+                    <rect y="11" width="24" height="2" rx="1" fill="black"></rect>
+                    <rect y="17" width="24" height="2" rx="1" fill="black"></rect>
+                </svg>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- burger menu -->
+    <section class="menu">
+        <div class="top">
+
+            <div class="Linfo extra_container">
+
+                <a href="../../skins/skins.html" class="linkL">
+                    <p>Skins</p>
+                </a>
+
+                <a href="../../jeans/index.html" class="linkL">
+                    <p>Jeans</p>
+                </a>
+
+                <a href="" class="linkL">
+                    <p>Women</p>
+                </a>
+
+                <a href="" class="linkL">
+                    <p>Unisex</p>
+                </a>
+
+                <a href="" class="linkL">
+                    <p>Men</p>
+                </a>
+
+                <a href="" class="linkL">
+                    <p>Colab</p>
+                </a>
+
+            </div>
+
+            <div class="Linfo">
+                <p class="titleM">Help</p>
+                <a href="" class="linkL">
+                    <p>Delivery and returns</p>
+                </a>
+
+                <a href="" class="linkL">
+                    <p>terms and conditions</p>
+                </a>
+
+                <a href="" class="linkL">
+                    <p>Cookies</p>
+                </a>
+            </div>
+
+            <div class="rHelp">
+                <p class="titleM">Information</p>
+                <a href="" class="linkR">
+                    <p>about</p>
+                </a>
+
+                <a href="" class="linkR">
+                    <p>Responsibility</p>
+                </a>
+
+                <a href="" class="linkR">
+                    <p>collective works</p>
+                </a>
+
+                <a href="" class="linkR">
+                    <p>contact</p>
+                </a>
+            </div>
+
+        </div>
+        <div class="bottom">
+
+            <div class="inst">
+                <a href="https://www.instagram.com/madh.official/?igshid=YmMyMTA2M2Y%3D">
+                    <div class="buttonInst">
+                        <div class="instCon">
+                            <p>Instagram</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- content -->
+    <section>
+        <!-- image -->
+        <div class="image imageScroller">
+            <!-- scroll images -->
+            <div class="scrollImage whithoutPad">
+                <img src="../assets/9.webp" alt="">
+            </div>
+            <div class="scrollImage whithoutPad">
+                <img src="../assets/9_2.webp" alt="">
+            </div>
+            <div class="scrollImage whithoutPad">
+                <img src="../assets/9_3.webp" alt="">
+            </div>
+            <div class="scrollImage whithoutPad">
+                <img src="../assets/9_4.webp" alt="">
+            </div>
+        </div>
+
+        <!-- scrolle images for small displays  -->
+        <div class="SMimageScroller">
+            <!-- scroll images -->
+            <div class="scrollImage whithoutPad">
+                <img src="../assets/9.webp" alt="">
+            </div>
+            <div class="scrollImage whithoutPad">
+                <img src="../assets/9_2.webp" alt="">
+            </div>
+            <div class="scrollImage whithoutPad">
+                <img src="../assets/9_3.webp" alt="">
+            </div>
+            <div class="scrollImage whithoutPad">
+                <img src="../assets/9_4.webp" alt="">
+            </div>
+
+        </div>
+
+        <!-- settings_of_jeans -->
+        <div class="settings_of_jeans">
+            <!-- top -->
+            <div class="Top">
+                <h3>WIDE LEG FIT - BLACK WORN</h3>
+                <p>High rise
+                    Wide Flare leg
+                    Button fly
+                    Rigid
+
+                    MADH is proud to offer the world's first denim fabric containing Blue Seed cotton in our denim. This
+                    unique cotton variety is 30% more durable than organic cotton and is 100% traceable, ensuring both
+                    quality and sustainability.
+
+                    57% regenerative cotton
+                    20% blue seed cotton
+                    23% recycled cotton
+
+                    Model is 174cm (XS/34) and wears a size 27/34</p>
+            </div>
+
+            <!-- bottom -->
+            <div class="contenT">
+                <!-- bottom -->
+                <div class="Bottom">
+                    <!-- size -->
+                    <div class="size">
+                        <!-- width -->
+                        <div class="width">
+                            <div class="titleW">
+                                <p>width</p>
+                            </div>
+                            <div class="blocks">
+                                <div class="block">
+                                    <p>W25</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W26</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W27</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W28</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W29</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W30</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W31</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W32</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W33</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W34</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>W36</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- length -->
+                        <div class="length">
+                            <div class="titleL">
+                                <p>length</p>
+                            </div>
+                            <div class="blockS">
+                                <div class="block">
+                                    <p>L32</p>
+                                </div>
+
+                                <div class="block">
+                                    <p>L34</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- add to cart -->
+                <div class="AddToCart">
+                    <!-- top -->
+                    <button>
+                        <p>ADD TO CART</p>
+                        <p>0 EUR</p>
+                    </button>
+                </div>
+
+                <!-- details -->
+                <div class="details">
+                    <button class="accordion">
+                        <h3>details</h3>
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13 2C13 1.44772 12.5523 1 12 1C11.4477 1 11 1.44772 11 2V9C11 10.1046 10.1046 11 9 11H2C1.44772 11 1 11.4477 1 12C1 12.5523 1.44772 13 2 13H9C10.1046 13 11 13.8954 11 15V22C11 22.5523 11.4477 23 12 23C12.5523 23 13 22.5523 13 22V15C13 13.8954 13.8954 13 15 13H22C22.5523 13 23 12.5523 23 12C23 11.4477 22.5523 11 22 11H15C13.8954 11 13 10.1046 13 9V2Z"
+                                fill="black"></path>
+                        </svg>
+                    </button>
+                    <div class="panel">
+                        <p>MADH is proud to offer the world's first denim fabric containing Blue Seed cotton in our
+                            denim. This unique cotton variety is 30% more durable than organic cotton and is 100%
+                            traceable, ensuring both quality and sustainability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- size & fit -->
+                <div class="sizeFit">
+                    <button class="accordion">
+                        <h3>size & fit</h3>
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13 2C13 1.44772 12.5523 1 12 1C11.4477 1 11 1.44772 11 2V9C11 10.1046 10.1046 11 9 11H2C1.44772 11 1 11.4477 1 12C1 12.5523 1.44772 13 2 13H9C10.1046 13 11 13.8954 11 15V22C11 22.5523 11.4477 23 12 23C12.5523 23 13 22.5523 13 22V15C13 13.8954 13.8954 13 15 13H22C22.5523 13 23 12.5523 23 12C23 11.4477 22.5523 11 22 11H15C13.8954 11 13 10.1046 13 9V2Z"
+                                fill="black"></path>
+                        </svg>
+                    </button>
+                    <div class="panel whithoutPad">
+                        <!-- size table -->
+                        <div class="table">
+                            <!-- left -->
+                            <div class="tableSize">
+                                <!-- cm/inch -->
+                                <div class="cmInch">
+
+                                    <div class="cm">
+                                        <p>Centimeters</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1C11.4477 1 11 1.44772 11 2V15.2795C11 16.9668 9.03939 17.8959 7.73352 16.8274L6.23783 15.6037C5.81897 15.261 5.20858 15.2914 4.8259 15.6741V15.6741C4.38421 16.1158 4.4217 16.8426 4.9065 17.2365L10.7388 21.9753C11.4736 22.5723 12.5264 22.5723 13.2612 21.9753L19.0935 17.2365C19.5783 16.8426 19.6158 16.1158 19.1741 15.6741V15.6741C18.7914 15.2914 18.181 15.261 17.7622 15.6037L16.2665 16.8274C14.9606 17.8959 13 16.9668 13 15.2795V2C13 1.44772 12.5523 1 12 1V1Z"
+                                                fill="black"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="inch">
+                                        <p>Inches</p>
+                                    </div>
+                                </div>
+
+
+                                <!-- size  -->
+                                <div class="sizeBlack">
+                                    <!-- width -->
+                                    <div class="widthBlack">
+
+                                        <div class="blockBlack">
+                                            <h3>Top waist (A)</h3>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W25</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W26</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W27</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W28</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W29</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W30</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W31</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W32</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W33</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W34</p>
+                                        </div>
+
+                                        <div class="blockBlack">
+                                            <p>W36</p>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- mid  -->
+                                    <div class="lengthWhite">
+                                        <div class="blockBlack">
+                                            <p>L32</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>68</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>71</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>73</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>76</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>78</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>81</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>83</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>86</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>88</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>91</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>96</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- right -->
+                                    <div class="lengthWhite">
+                                        <div class="blockBlack">
+                                            <p>L34</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>68</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>71</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>73</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>76</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>78</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>81</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>83</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>86</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>88</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>91</p>
+                                        </div>
+
+                                        <div class="blockWhite">
+                                            <p>96</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example">
+                                <p>Model is 186cm (M/50) and wears a size 32/34"</p>
+                                <!-- circle buttons -->
+                                <div class="circles">
+                                    <div class="circleWidthLetter">
+                                        <p>A</p>
+                                    </div>
+                                    <div class="circleWidthLetter">
+                                        <p>B</p>
+                                    </div>
+                                    <div class="circleWidthLetter">
+                                        <p>C</p>
+                                    </div>
+                                    <div class="circleWidthLetter">
+                                        <p>D</p>
+                                    </div>
+                                    <div class="circleWidthLetter">
+                                        <p>E</p>
+                                    </div>
+                                </div>
+                                <img src="../assets/_size_of_jeans.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- carousel of text "You may also like " -->
+    <div class="carousel">
+        <div class="infinite-carousel">
+            <div class="carousel-inner">
+                <p>
+                    <span>You may also like -</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+
+                <p>
+                    <span>You may also like-</span>
+                    <i class="fas fa-start-of-life"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_product_bottom">
+        <div class="products_bottom_GRID">
+            <div class="product moreThen35%">
+                <a href="product15.html" class="product-link">
+                    <img src="../assets/15.webp" class="img default" alt="">
+                    <img src="../assets/15_2.webp" class="img hover" alt="">
+                    <div class="Discription">
+                        <p>SCULPLTURE FIT - OZON BLUE</p>
+                        <p>220.00 EUR</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <section class="foot">
+            <!-- left -->
+            <!-- contact us -->
+            <div class="contact_info">
+                <div class="Email">
+                    <p class="madh">MADH</p>
+                    <p class="us">Contact us at <a href="mailto:info@madhstore.com" class="link">info@madhstore.com</a>
+                    </p>
+                </div>
+                <!-- information -->
+                <div class="contact">
+                    <div class="info">
+                        <p class="title">INFORMATION</p>
+                        <a href="">
+                            <p class="link">About</p>
+                        </a>
+                        <a href="">
+                            <p class="link">Responsibility</p>
+                        </a>
+                        <a href="">
+                            <p class="link">Collective works</p>
+                        </a>
+                        <a href="">
+                            <p class="link">Contact</p>
+                        </a>
+                    </div>
+                    <!-- help -->
+                    <div class="help">
+                        <p class="title">HELP</p>
+                        <a href="">
+                            <p class="link">Delivery and returns</p>
+                        </a>
+                        <a href="">
+                            <p class="link">Terms and conditions</p>
+                        </a>
+                        <a href="">
+                            <p class="link">Cookies</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- right -->
+
+            <!-- input -->
+            <div class="input">
+                <p class="title">NEWSLETTER</p>
+                <form action="">
+                    <input type="email" placeholder="Your email address*">
+                    <a href="" class="button">Sign up
+                        <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 10.8389C0 10.0104 0.671573 9.33887 1.5 9.33887H19.6504V12.3389H1.5C0.671573 12.3389 0 11.6673 0 10.8389Z"
+                                fill="#000000"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.6165 15.6287C25.7122 14.3281 24.7876 12.3402 23.0869 12.3402H19.6604C19.6549 12.3402 19.6504 12.3357 19.6504 12.3302V9.35019C19.6504 9.34467 19.6549 9.34019 19.6604 9.34019H23.0898C24.7901 9.34019 25.7148 7.35299 24.6198 6.05219L21.4905 2.33486C21.0154 1.77049 21.0516 0.936345 21.5736 0.415138C22.1559 -0.16619 23.1088 -0.132589 23.6488 0.488311L31.5092 9.52783C32.1636 10.2804 32.1636 11.4 31.5092 12.1525L23.6518 21.1885C23.1105 21.811 22.1549 21.8439 21.5721 21.2601C21.0507 20.7378 21.0154 19.9035 21.4909 19.339L24.6165 15.6287Z"
+                                fill="#000000"></path>
+                        </svg>
+                    </a>
+
+                </form>
+
+
+                <!-- link -->
+                <div class="instCopyr">
+                    <a href="https://www.instagram.com/madh.official/?igshid=YmMyMTA2M2Y%3D">
+                        <p class="link">Instagram</p>
+                    </a>
+
+                    <p class="copyright">2025 MADH — All rights reserved Madh</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="../../main.js"></script>
+
+
+</body>
+
+</html>
