@@ -8,7 +8,7 @@
 
 @media(max-width:1024px) {
 
-  
+
     /* content */
     section {
         max-width: 100% !important;
@@ -138,6 +138,30 @@ a {
 
 }
 
+/* hover effect for images */
+.listProducts img {
+    grid-area: 1/1;
+    transition: opacity 0.5s ease;
+    object-fit: cover;
+    max-height: fit-content;
+}
+
+.product-link {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.hover {
+    opacity: 0;
+}
+
+.product:hover .hover {
+    opacity: 1;
+}
+
+.product:hover .default {
+    opacity: 0;
+}
 
 /* footer */
 footer {
