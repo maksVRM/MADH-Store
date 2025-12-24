@@ -324,3 +324,12 @@ section {
 .next {
     right: 0;
 }
+
+.P26,
+.P27 {
+    border-bottom: 1px solid black;
+}
+
+.P28{
+    border-right: 1px solid black;
+}
