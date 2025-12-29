@@ -36,13 +36,9 @@ $('.menu-toggle').on('click', function () {
 
 
 $('.menu-toggle').on('click', function () {
-    // $('.menu').toggleClass('open')
-    $('.container').toggleClass('close')
     $('footer').toggleClass('close')
-    $('.discription').toggleClass('close')
+    $('section').toggleClass('close')
 
-
-    // console.log("works!!!")
     return false
 })
 
@@ -88,3 +84,46 @@ function moveSlide(direction) {
     slider.style.transform = `translateX(-${index * imgWidth}px)`;
 }
 
+
+// accordion for guest designer
+var acc = document.getElementsByClassName("accordion");
+var circleWidthLetter = document.getElementsByClassName("circleWidthLetter")
+
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+        if (!panel) return;
+
+        panel.classList.toggle("open");
+
+        var circlesInPanel = panel.querySelector('.circles');
+        if (circlesInPanel) {
+            circlesInPanel.classList.toggle("visible");
+        }
+
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;   // close
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";  // open
+        }
+    });
+}
+
+for (let i = 0; i < circleWidthLetter.length; i++) {
+    circleWidthLetter[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        var circles = this.nextElementSibling;
+        if (!circles) return;
+
+        circles.classList.toggle("open");
+
+        if (circles.style.display) {
+            circles.style.display = none;   // close
+        } else {
+            circles.style.display = flex;  // open
+        }
+    });
+}

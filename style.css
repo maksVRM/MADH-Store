@@ -22,7 +22,7 @@ nav {
     border-bottom: 1px solid var(--black);
     font-size: 16px;
     line-height: 20px;
-    position: fixed;
+    position: sticky;
     transition: 0.3s ease;
     z-index: 3;
 }
@@ -139,9 +139,13 @@ section {
 .no_bg img {
     max-width: 50%;
     object-fit: cover;
+/* section text - image women */
+
+.women {
+    max-width: 100%;
 }
 
-.text h3{
+.text h3 {
     text-align: center;
 }
 
@@ -176,15 +180,9 @@ section {
 /* section 3 images -   */
 
 .forJeans {
-    /* height: 750px; */
-    /* background-image: url(assets/Group\ 1.png); */
-    /* background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; */
     display: flex;
     flex-direction: column;
     border: none;
-    /* margin-bottom: -176px; */
 }
 
 .forJeans .images {
@@ -211,25 +209,15 @@ section {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    
-    
+
+
     text-transform: uppercase;
     /* margin-top: -76%; */
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
-    
+
 }
-
-/* .textJ a{
-    margin-top: -50%;
-} */
-
-/* .textJ a {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-} */
 
 /* carousel */
 .mySlides {
@@ -237,9 +225,7 @@ section {
 }
 
 .slideshow-container {
-    /* max-width: 1000px; */
     position: relative;
-    /* margin: auto; */
 }
 
 /* Next & previous buttons */
@@ -344,4 +330,13 @@ section {
 
 .next {
     right: 0;
+}
+
+.P26,
+.P27 {
+    border-bottom: 1px solid black;
+}
+
+.P28{
+    border-right: 1px solid black;
 }

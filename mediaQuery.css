@@ -1,5 +1,4 @@
 /* navbar */
-
 @media(max-width:680px) {
     nav {
         justify-content: space-between;
@@ -9,18 +8,13 @@
         max-width: 100vw;
     }
 
-    /* nav a {
-        padding: 12px 12px 5px;
-        text-align: center;
-    } */
-
     .dont_show {
         display: none;
     }
 
     .menu {
         max-width: 100%;
-        /* margin-top: 40px; */
+        height: auto;
     }
 
     .top {
@@ -77,15 +71,13 @@
     }
 }
 
+
+
 @media(min-width:760px) {
+
     .top .extra_container {
         display: none;
     }
-}
-
-
-
-@media(min-width:760px) {
 
     .top,
     .Linfo,
@@ -139,10 +131,21 @@
     }
 }
 
+@media(min-width:1025px) {
+    .menu {
+        width: 73%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 !important;
+    }
+}
+
+
+
 @media(min-width:1020px) {
 
     .menu {
-        max-width: 73%;
+        max-width: 100%;
     }
 
     .top,
@@ -152,8 +155,12 @@
         width: 100%;
     }
 
+    .rHelp {
+        border-left: 1px solid black;
+    }
+
     .Linfo {
-        border-right: 1px solid black !important;
+        /* border-right: 1px solid black !important; */
     }
 
     .linkR {
@@ -208,7 +215,6 @@
 }
 
 /* classes for breakpoint */
-
 .onlyDesk {
     display: none;
 }
@@ -221,13 +227,9 @@
 
 @media (max-width: 768px) {
 
-    /* маленькие экраны */
     .img-responsive {
-        /* width: 100%; */
         max-width: 100%;
         height: auto;
-        /* border-bottom: 1px solid red; */
-        /* margin-top: 50px; */
         object-fit: contain;
         clear: both;
 
@@ -243,13 +245,6 @@
 
 
 
-
-
-
-
-
-
-
 /* footer */
 
 @media(max-width: 768px) {
@@ -259,9 +254,7 @@
 
     footer .foot,
     .contact {
-        /* flex-direction: column; */
         align-items: center;
-        /* gap: 20px; */
     }
 
     .foot {
@@ -271,14 +264,11 @@
     .contact_info .contact {
         width: 100%;
         text-align: center;
-        /* gap: 20px; */
     }
 
     .contact {
         width: 100%;
         text-align: center;
-        /* justify-content: space-around; */
-        /* gap: 100px; */
     }
 
     .title {
@@ -408,6 +398,11 @@
         margin-top: -74%;
 
     }
+
+    .instCopyr {
+        flex-direction: row !important;
+    }
+
 }
 
 @media(min-width:1025px) {

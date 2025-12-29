@@ -1,0 +1,202 @@
+/* content */
+
+section {
+    display: flex;
+    flex-direction: row;
+    max-width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 50px; */
+}
+
+/* date of delivery */
+.date_of_delivery {
+    /* width: 25%; */
+    height: 100vh;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* background-image: none; */
+    background-position: 0px 50px;
+    background-size: contain;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
+
+.date_of_delivery p,
+.date_of_delivery h3 {
+    margin: 0;
+}
+
+/* date */
+.date {
+    padding: 16px 23px;
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+
+
+/* buttons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.startNow {
+    padding: 24px 16px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.designer {
+    padding: 24px 16px;
+}
+
+.text-svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* date text */
+.startNow a {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.startNow h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.designer a {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.gif {
+    display: none;
+    /* by default you don't see it  */
+}
+
+@media (min-width: 760px) {
+    .gif {
+        display: flex;
+    }
+}
+
+
+
+@media(min-width:370px) {
+
+    section {
+        flex-direction: column;
+        margin: 0;
+        max-width: 100%;
+
+    }
+
+    .date_of_delivery {
+        background-image: url(../assets/gifka.gif);
+        width: 100%;
+
+    }
+
+    .date {
+        text-transform: none;
+    }
+
+}
+
+@media(min-width:760px) {
+    section {
+        flex-direction: row;
+    }
+
+    .date_of_delivery {
+        width: 50%;
+        background-image: none;
+    }
+
+    .gif {
+        width: 50%;
+    }
+
+    .date_of_delivery .date h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    .date_of_delivery .buttons .designer h3 {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .gif {
+        width: 50% !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gif img {
+        height: 50vh !important;
+        object-fit: contain;
+    }
+
+}
+
+@media(min-width:1025px) {
+    section {
+        display: flex;
+        flex-direction: row;
+        max-width: 73%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .date_of_delivery {
+        width: 25%;
+        background-image: none;
+    }
+
+    .date {
+        text-transform: uppercase;
+    }
+
+    .gif {
+        width: 75% !important;
+        /* display: flex; */
+        justify-content: center;
+
+    }
+
+    .gif img {
+        width: 100%;
+        /* max-width: auto; */
+        height: 99vh !important;
+        box-sizing: border-box;
+
+    }
+
+}
+
+
+/* gif */
+
+.gif img {
+    height: 99vh;
+}

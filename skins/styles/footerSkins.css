@@ -1,0 +1,38 @@
+footer {
+    background-color: #ff379b;
+    color: var(--black);
+}
+
+footer a {
+    color: var(--black);
+
+}
+
+.foot {
+    border: none;
+    padding: 0;
+}
+
+.contact {
+    justify-content: left;
+    gap: 70px;
+}
+
+@media(min-width:900px) {
+    .instCopyr {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:900px){
+    .gif img{
+        width: 100%;
+    }
+
+    section{
+        max-width: 100%;
+        margin: 0;
+        /* background-color: #ff379b; */
+    }
+}

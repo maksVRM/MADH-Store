@@ -1,0 +1,394 @@
+section {
+    display: flex;
+    flex-direction: row;
+    max-width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 50px; */
+}
+
+.image {
+    width: 50%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+}
+
+img {
+    height: 100vh;
+}
+
+.settings_of_jeans {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Top {
+    padding: 28px 20px 0;
+
+}
+
+.Top h3 {
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Top p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8vh;
+    white-space: pre-line;
+}
+
+p,
+h3 {
+    margin: 0;
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 20px;
+}
+
+.width,
+.length {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleW p,
+.titleL p {
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.blocks {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.block:hover {
+    background-color: #ededed;
+    color: #00a5ff;
+}
+
+.AddToCart button {
+    padding: 24px 20px;
+    width: 100%;
+    border: 0;
+    background-color: #b9b9b9;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-top: 1px solid black;
+}
+
+.accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: initial;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 28px 20px;
+}
+
+.panel {
+    overflow: hidden;
+    padding: 0 28px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    transition: all 1s ease;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    white-space: pre-line;
+
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+.open {
+    opacity: 1;
+    padding: 20px 28px;
+    border-top: 1px solid black;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion.active .icon {
+    transform: rotate(180deg);
+    /* rotate to 180 */
+}
+
+.details,
+.sizeFit {
+    border-top: 1px solid black;
+}
+
+/* table size */
+
+.table {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border-top: 1px solid black; */
+}
+
+.sizeFit .table {
+    height: 100%;
+}
+
+/* table  */
+.tableSize {
+    width: 60%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.cmInch {
+    display: flex;
+    flex-direction: row;
+}
+
+.cm {
+    width: 50%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.inch {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+
+/* image */
+.example {
+    width: 50%;
+}
+
+.sizeBlack {
+    display: flex;
+    flex-direction: row;
+}
+
+.widthBlack {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.whithoutPad {
+    padding: 0;
+    display: flex;
+    /* max-height: fit-content; */
+}
+
+.blockBlack {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    font-size: 20px;
+    line-height: 20px;
+    /* cursor: pointer; */
+    background-color: var(--black);
+    color: var(--white);
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    /* border-bottom: 1px solid white; */
+}
+
+.blockBlack h3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+.lengthWhite {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
+
+.blockWhite:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.blockWhite {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--black);
+    border-top: 1px solid black;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.example {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.example img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+@media(max-width:1025px) {
+    section {
+        /* width: 100%; */
+        max-width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .open {
+        padding: 0;
+    }
+
+    .menu{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    img {
+        object-fit: contain;
+    }
+
+    .settings_of_jeans {
+        width: 100%;
+    }
+
+    .Top h3 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .block:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    .AddToCart button {
+        background-color: var(--black);
+    }
+
+    .panel {
+        padding: 20px 16px;
+    }
+
+    .panel .table {
+        width: 100%;
+    }
+
+    .whithoutPad {
+        padding: 0;
+    }
+
+    .tableSize {
+        width: 80%;
+    }
+
+
+
+    .cmInch {
+        width: 100%;
+
+    }
+}
+
+@media (max-width:760px) {
+    .table {
+        flex-direction: column-reverse;
+    }
+
+    .tableSize,
+    .example {
+        width: 100%;
+    }
+
+    .cmInch {
+        border-top: 1px solid black;
+    }
+
+
+}
+
+footer {
+    background-color: #00a5ff;
+}
