@@ -1,0 +1,204 @@
+.menu {
+    flex-direction: column;
+    top: 0;
+    max-width: 73%;
+    height: 100vh;
+    border-right: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+
+    display: none; 
+}
+
+.menu.open {
+    display: flex;            
+    transform: translateY(0); 
+}
+
+.close {
+    display: none;
+}
+
+.top {
+    /* border: 1px solid black; */
+    /* width: 80%; */
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.top .rHelp {
+    /* border: 1px solid black; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+
+/* left side */
+.linkL {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/* right side */
+.linkR {
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.linkR p,
+.linkL p {
+    margin: 0;
+    transition: 0.5s;
+
+}
+
+.titleM {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+
+
+/* left side */
+.top .Linfo {
+    border-right: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+
+/* bottom */
+.bottom {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /* width: 20%; */
+    height: 20%;
+    display: flex;
+    justify-content: start;
+}
+
+.inst {
+    width: 15%;
+    border-right: 1px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inst a {
+    text-decoration: none;
+}
+
+.instCon {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+a .buttonInst {
+    height: 100%;
+}
+
+.buttonInst .instCon {
+    height: 100%;
+}
+
+.instCon p {
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--black);
+    transition: 0.5s;
+}
+
+/* hover */
+.instCon p:hover,
+.linkR :hover,
+.linkL :hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+/* nav bar */
+nav {
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--black);
+    font-size: 16px;
+    line-height: 20px;
+    position: sticky;
+    transition: 0.3s ease;
+    z-index: 3;
+}
+
+nav p {
+    margin: 0;
+}
+
+nav a p {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: baseline;
+}
+
+.burger-button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+.hide {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+nav a {
+    padding: 12px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.left {
+    display: flex;
+    justify-items: baseline;
+}
+
+.right {
+    display: flex;
+    justify-items: baseline;
+}
+
+
