@@ -183,6 +183,11 @@
         border-right: 1px solid black;
         width: 15%;
     }
+
+    .no_bg img {
+        width: 50%;
+        object-fit: cover;
+    }
 }
 
 /* content */

@@ -55,9 +55,14 @@
     margin: 0;
 }
 
-.bottom {
+.Bottom {
     /* border: none; */
     justify-content: space-between;
+    /* width: 20%; */
+    height: 20%;
+    display: flex;
+    justify-content: start;
+
 }
 
 .top {

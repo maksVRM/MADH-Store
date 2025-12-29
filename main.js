@@ -17,13 +17,11 @@ $('.menu-toggle').on('click', function () {
     const menu = $('.menu');
 
     if (!menu.hasClass('open')) {
-        // ПЕРВОЕ включение: показываем, потом включаем анимацию
         menu.show(0);
         requestAnimationFrame(() => {
             menu.addClass('open');
         });
     } else {
-        // Закрытие: убираем класс, ждём завершения transition, потом скрываем
         menu.removeClass('open');
 
         menu.one('transitionend', () => {

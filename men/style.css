@@ -63,12 +63,18 @@
 
 }
 
-
 .InfoFilter p {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
 }
+
+.numberOfProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 h3 {
     margin: 0;
