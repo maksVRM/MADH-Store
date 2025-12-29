@@ -136,6 +136,9 @@ section {
     overflow: hidden;
 }
 
+.no_bg img {
+    max-width: 50%;
+    object-fit: cover;
 /* section text - image women */
 
 .women {
@@ -149,8 +152,9 @@ section {
 .text {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-self: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .women h3 {
@@ -275,10 +279,13 @@ section {
     padding: 0 32px 60px 32px;
 }
 
-.slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
+.jeansText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Окно, в котором видно только 3 фото */
