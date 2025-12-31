@@ -181,25 +181,34 @@ section {
     object-fit: cover;
 }
 
-/* section 2 images */
-
-.man_images {
-    /* margin-bottom: 260px; */
-}
-
 /* section 3 images -   */
 
 .forJeans {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-self: center;
     border: none;
+    z-index: 2;
+    position: absolute;
 }
 
 .forJeans .images {
     max-width: 100%;
     justify-self: center;
     justify-content: center;
+}
 
+.jeansText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    border-top: none !important;
+}
+
+.jeansText a h3 {
+    text-transform: uppercase;
 }
 
 .images {
@@ -234,6 +243,7 @@ section {
 
 .slideshow-container {
     position: relative;
+    z-index: 1;
 }
 
 /* Next & previous buttons */

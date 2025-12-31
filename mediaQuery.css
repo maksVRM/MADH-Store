@@ -223,7 +223,21 @@
     .text a {
         display: block;
     }
+
 }
+
+@media (max-width: 769px) and (min-width: 768px) {
+    .jeansText {
+        margin-top: 200px !important;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 769px) {
+    .jeansText {
+        margin-top: 200px;
+    }
+}
+
 
 /* classes for breakpoint */
 .onlyDesk {
@@ -243,11 +257,14 @@
         object-fit: contain;
         clear: both;
     }
-    
+
     .container h3 {
         font-size: 60px !important;
     }
 
+    .jeansText {
+        margin-top: 80px;
+    }
 
 }
 
