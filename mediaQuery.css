@@ -131,6 +131,12 @@
     }
 }
 
+@media(max-width:1024px) {
+    .navigation {
+        width: 100% !important;
+    }
+}
+
 @media(min-width:1025px) {
     .menu {
         width: 73%;
@@ -211,7 +217,7 @@
     }
 
     .container h3 {
-        font-size: 60px;
+        font-size: 80px !important;
     }
 
     .text a {
@@ -231,14 +237,18 @@
 }
 
 @media (max-width: 768px) {
-
     .img-responsive {
         max-width: 100%;
         height: auto;
         object-fit: contain;
         clear: both;
-
     }
+    
+    .container h3 {
+        font-size: 60px !important;
+    }
+
+
 }
 
 @media(min-width:1000px) {

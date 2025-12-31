@@ -76,7 +76,11 @@
     }
 }
 
-
+@media(max-width:1024px) {
+    .navigation {
+        width: 100% !important;
+    }
+}
 
 @media(min-width:760px) {
 

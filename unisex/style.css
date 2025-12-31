@@ -8,11 +8,16 @@
 
 @media(max-width:1024px) {
 
-
     /* content */
     section {
         max-width: 100% !important;
         width: 100%;
+    }
+}
+
+@media (max-width: 821px) {
+    .Title {
+        font-size: 90px !important;
     }
 }
 
@@ -55,7 +60,7 @@
     line-height: 20px;
 }
 
-.numberOfProducts{
+.numberOfProducts {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +134,7 @@ a {
     }
 
     .Title {
-        font-size: 37px;
+        font-size: 37px !important;
         line-height: 55.5px;
     }
 

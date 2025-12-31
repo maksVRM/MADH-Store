@@ -18,7 +18,7 @@ nav {
     background-color: var(--white);
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     border-bottom: 1px solid var(--black);
     font-size: 16px;
     line-height: 20px;
@@ -27,15 +27,19 @@ nav {
     z-index: 3;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: row;
+    width: 73%;
+    justify-content: space-between;
+}
+
 nav p {
     margin: 0;
 }
 
 nav a p {
     width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: baseline;
 }
 
 .burger-button {
@@ -57,6 +61,11 @@ nav a {
     padding: 12px;
     text-decoration: none;
     color: var(--black);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
 }
 
 .left {
@@ -167,7 +176,7 @@ section {
     opacity: 0.5;
 }
 
-.women img{
+.women img {
     height: 100%;
     object-fit: cover;
 }
@@ -327,6 +336,6 @@ section {
     border-bottom: 1px solid black;
 }
 
-.P28{
+.P28 {
     border-right: 1px solid black;
 }
