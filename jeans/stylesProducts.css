@@ -29,10 +29,6 @@ section {
     border-top: none;
 }
 
-/* img {
-    height: 100vh;
-} */
-
 .settings_of_jeans {
     width: 50%;
     display: flex;
@@ -40,10 +36,6 @@ section {
     justify-content: space-between;
     border-left: 1px solid black;
 }
-
-
-
-
 
 /* scroll images */
 
@@ -123,19 +115,6 @@ section {
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .Top {
     padding: 28px 20px 0;
@@ -349,8 +328,18 @@ h3 {
     padding: 20px;
 }
 
-.example .circles {
+/* .example .circles {
     width: 100%;
+} */
+
+@media(min-width:767px) and (max-width:821px){
+    .circles{
+        flex-direction: column !important;
+    }
+
+    /* .circleWidthLetter{
+        width: 15%;
+    } */
 }
 
 .circles {

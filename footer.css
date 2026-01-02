@@ -1,8 +1,6 @@
 footer {
     background-color: var(--black);
     color: var(--white);
-    /* display: flex;
-    justify-content: space-between; */
     font-weight: 400;
 }
 
@@ -24,8 +22,6 @@ footer .foot {
     display: flex;
     justify-self: center;
     box-sizing: border-box;
-    /* justify-content: space-around; */
-    /* flex-direction: row; */
 }
 
 @media(min-width: 1024px) {
@@ -41,7 +37,6 @@ footer .foot {
     width: 50%;
 }
 
-
 @media(min-width: 1024px) {
     .contact {
         flex-direction: row;
@@ -49,11 +44,11 @@ footer .foot {
     }
 }
 
-
 .contact {
     display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: left;
+    gap: 90px;
     width: 50%;
 }
 
@@ -105,7 +100,6 @@ footer .foot {
 .input {
     width: 50%;
     display: flex;
-    /* justify-content: end; */
     flex-direction: column;
 }
 
@@ -151,9 +145,7 @@ input {
 }
 
 .button {
-    /* max-width: 20%; */
     display: flex;
-    /* justify-content: end; */
     justify-self: end;
     margin: 16px 0 0 0;
     font-size: 20px;

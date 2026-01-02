@@ -146,7 +146,7 @@ h3 {
     transition: max-height 0.3s ease;
 }
 
-.open {
+.openP {
     opacity: 1;
     padding: 20px 28px;
     border-top: 1px solid black;
@@ -310,11 +310,7 @@ h3 {
         margin: 0;
     }
 
-    .open {
-        padding: 0;
-    }
-
-    .menu{
+    .menu {
         margin: 0;
         max-width: 100%;
     }
@@ -348,6 +344,10 @@ h3 {
     }
 
     .panel {
+        padding: 0 16px;
+    }
+
+    .openP {
         padding: 20px 16px;
     }
 

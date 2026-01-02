@@ -4,7 +4,6 @@ section {
     max-width: 73%;
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: 50px; */
 }
 
 .image {
@@ -56,7 +55,6 @@ h3 {
 .Bottom {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .size {
@@ -173,7 +171,6 @@ h3 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* border-top: 1px solid black; */
 }
 
 .sizeFit .table {
@@ -279,7 +276,6 @@ h3 {
 .whithoutPad {
     padding: 0;
     display: flex;
-    /* max-height: fit-content; */
 }
 
 .blockBlack {
@@ -288,12 +284,10 @@ h3 {
     padding: 12px 0;
     font-size: 20px;
     line-height: 20px;
-    /* cursor: pointer; */
     background-color: var(--black);
     color: var(--white);
     border-top: 1px solid white;
     border-right: 1px solid white;
-    /* border-bottom: 1px solid white; */
 }
 
 .blockBlack h3 {
@@ -348,7 +342,6 @@ h3 {
 
 @media(max-width:1025px) {
     section {
-        /* width: 100%; */
         max-width: 100%;
         flex-direction: column;
         margin: 0;

@@ -150,7 +150,7 @@ nav {
     background-color: var(--white);
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     border-bottom: 1px solid var(--black);
     font-size: 16px;
     line-height: 20px;
@@ -158,6 +158,14 @@ nav {
     transition: 0.3s ease;
     z-index: 3;
 }
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    width: 73%;
+    justify-content: space-between;
+}
+
 
 nav p {
     margin: 0;
