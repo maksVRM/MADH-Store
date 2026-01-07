@@ -1,3 +1,4 @@
+// burger menu
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
@@ -78,7 +79,6 @@ function moveSlide(direction) {
 
     index += direction;
 
-    // защита от выхода за границы
     if (index < 0) index = 0;
     if (index > images.length - 3) index = images.length - 3;
 

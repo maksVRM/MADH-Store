@@ -4,12 +4,10 @@ section {
     max-width: 73%;
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: 50px; */
 }
 
 .image {
     width: 50%;
-    /* border-right: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,9 +40,7 @@ section {
 .imageScroller {
     display: flex;
     overflow-x: auto;
-    /* horizontal scroll */
     scroll-snap-type: x mandatory;
-    /* gap: 20px; */
     padding: 20px 0;
     scrollbar-width: none;
     /* removed scrollbar firefox */
@@ -59,7 +55,6 @@ section {
 
 .scrollImage {
     flex: 0 0 100%;
-    /* image 100% width */
     scroll-snap-align: start;
     display: flex;
     justify-content: center;
@@ -79,8 +74,6 @@ section {
     overflow-y: auto;
     /* horizontal scroll */
     scroll-snap-type: x mandatory;
-    /* gap: 20px; */
-    /* padding: 20px 0; */
     scrollbar-width: none;
     /* removed scrollbar firefox */
 
@@ -94,19 +87,12 @@ section {
 }
 
 
-
-
 /* scroll text */
 .scrollText {
-    /* display: flex; */
     flex-direction: column;
     justify-content: start;
-    /* height: 100vh; */
-    /* margin-bottom: 0; */
-    /* position: absolute; */
     font-size: 20px;
     line-height: 20px;
-    /* right: unset; */
     left: 0px;
     padding-left: 28px;
     padding-right: 28px;
@@ -162,7 +148,6 @@ h3 {
 .blockS {
     display: flex;
     flex-direction: row;
-    /* grid-template-columns: repeat(2, 2fr); */
 }
 
 .blockS .block {
@@ -273,7 +258,6 @@ h3 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* border-top: 1px solid black; */
 }
 
 .sizeFit .table {
@@ -406,7 +390,6 @@ h3 {
     color: var(--white);
     border-top: 1px solid white;
     border-right: 1px solid white;
-    /* border-bottom: 1px solid white; */
 }
 
 .blockBlack h3 {
@@ -451,10 +434,8 @@ h3 {
     padding: 12px 0;
     font-size: 20px;
     line-height: 20px;
-    /* cursor: pointer; */
     background-color: var(--white);
     color: var(--white);
-    /* border-top: 1px solid black; */
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -477,7 +458,6 @@ h3 {
 
 @media(max-width:1025px) {
     section {
-        /* width: 100%; */
         max-width: 100%;
         flex-direction: column;
         margin: 0;
@@ -583,8 +563,6 @@ h3 {
 /*  carousel of text "You may also like "  */
 .carousel {
     max-width: 73%;
-    /* border-right: 1px solid var(--black);
-    border-left: 1px solid var(--black); */
     border: 1px solid black;
     overflow: hidden;
     margin-left: auto;
@@ -600,8 +578,6 @@ h3 {
 .infinite-carousel {
     max-width: 100%;
     width: 100%;
-
-    /* border: 1px solid black; */
 }
 
 .infinite-carousel .carousel-inner {
@@ -628,13 +604,10 @@ h3 {
 
 .page_product_bottom {
     max-width: 73%;
-    /* border-right: 1px solid var(--black);
-    border-left: 1px solid var(--black); */
     border: 1px solid black;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 20px 0; */
 }
 
 /* media query */
@@ -660,7 +633,6 @@ h3 {
     }
 
 }
-
 
 /* footer */
 footer {
