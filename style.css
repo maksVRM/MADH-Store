@@ -345,3 +345,7 @@ section {
 .P28 {
     border-right: 1px solid black;
 }
+
+.leftSide{
+    border-left: 0;
+}
