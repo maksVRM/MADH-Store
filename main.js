@@ -37,6 +37,9 @@ $('.menu-toggle').on('click', function () {
 $('.menu-toggle').on('click', function () {
     $('footer').toggleClass('close')
     $('section').toggleClass('close')
+    $('.carousel').toggleClass('close')
+    $('.infinite-carousel').toggleClass('close')
+    $('.page_product_bottom').toggleClass('close')
 
     return false
 })
@@ -94,7 +97,7 @@ for (let i = 0; i < acc.length; i++) {
         var panel = this.nextElementSibling;
         if (!panel) return;
 
-        panel.classList.toggle("open");
+        panel.classList.toggle("openP");
 
         var circlesInPanel = panel.querySelector('.circles');
         if (circlesInPanel) {

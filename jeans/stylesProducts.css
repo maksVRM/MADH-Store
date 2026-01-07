@@ -312,8 +312,18 @@ h3 {
     padding: 20px;
 }
 
-.example .circles {
+/* .example .circles {
     width: 100%;
+} */
+
+@media(min-width:767px) and (max-width:821px){
+    .circles{
+        flex-direction: column !important;
+    }
+
+    /* .circleWidthLetter{
+        width: 15%;
+    } */
 }
 
 .circles {

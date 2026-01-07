@@ -53,11 +53,6 @@
         text-align: right;
     }
 
-
-    .extra_container {
-        margin-top: 40px;
-    }
-
     .extra_container p {
         font-size: 32;
         line-height: 32px;
@@ -346,7 +341,7 @@
 
 
     footer {
-        padding: 16px !important;
+        padding: 16px 0 !important;
     }
 
     footer .foot {
@@ -398,16 +393,3 @@
         height: 80vh;
     }
 }
-
-/* @media(min-width:1272px) {
-    section {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 73%;
-    }
-
-    .slider img {
-        width: 33%;
-    }
-} */
-
