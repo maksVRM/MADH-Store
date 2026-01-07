@@ -250,7 +250,7 @@ h3 {
     line-height: 32px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 28px 20px;
+    padding: 0;
 }
 
 .panel {
@@ -650,7 +650,7 @@ h3 {
 
 /* media query */
 @media(max-width:1025px) {
-   
+
     .carousel {
         margin: 0;
         max-width: 100%;
@@ -666,7 +666,7 @@ h3 {
         max-width: 100%;
     }
 
-     .product{
+    .product {
         max-width: 100% !important;
     }
 

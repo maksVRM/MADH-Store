@@ -229,7 +229,7 @@ h3 {
     line-height: 32px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 28px 20px;
+    padding: 0;
 }
 
 .panel {
