@@ -68,6 +68,8 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+    font-weight: 400;
+    text-transform: none;
 }
 
 .numberOfProducts{

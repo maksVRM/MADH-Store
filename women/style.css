@@ -50,7 +50,7 @@
     line-height: 20px;
 }
 
-.numberOfProducts{
+.numberOfProducts {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,6 +67,8 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+    font-weight: 400;
+    text-transform: none;
 }
 
 h3 {
