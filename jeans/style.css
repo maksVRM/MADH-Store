@@ -190,3 +190,11 @@ footer p {
     color: var(--black) !important;
 
 }
+
+.bottomWithoutBord{
+    border-bottom: 0 !important;
+}
+
+.rightSide{
+    border-right: 0 !important;
+}

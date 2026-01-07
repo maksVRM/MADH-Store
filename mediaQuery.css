@@ -188,6 +188,18 @@
 
 /* content */
 
+@media(max-width:1000px) and (min-width:767px) {
+    .women {
+        padding-top: 213px;
+    }
+}
+
+@media(max-width:400px) {
+    .women {
+        padding-top: 80px;
+    }
+}
+
 @media(max-width:1000px) {
     .women {
         flex-direction: column-reverse;
@@ -368,6 +380,7 @@
 
     }
 }
+
 @media(min-width:344px) {
     footer .foot {
         width: 100%;

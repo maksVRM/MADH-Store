@@ -585,7 +585,9 @@ h3 {
     max-width: 73%;
     /* border-right: 1px solid var(--black);
     border-left: 1px solid var(--black); */
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
