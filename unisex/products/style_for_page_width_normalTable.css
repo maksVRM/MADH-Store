@@ -100,6 +100,13 @@ h3 {
     color: #00a5ff;
 }
 
+/* remove hover effect */
+.block.SOLD:hover {
+    background-color: transparent;
+    color: #b9b9b9;
+    cursor: default;
+}
+
 .AddToCart button {
     padding: 24px 20px;
     width: 100%;

@@ -38,12 +38,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-left: 1px solid black;
+    /* border-left: 1px solid black; */
 }
-
-
-
-
 
 /* scroll images */
 
