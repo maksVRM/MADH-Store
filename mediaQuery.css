@@ -276,9 +276,12 @@
 
 }
 
-
-
 /* footer */
+@media(min-width:768px){
+    .help{
+        margin-top: -25px;
+    }
+}
 
 @media(max-width: 768px) {
     footer {

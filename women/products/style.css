@@ -56,6 +56,10 @@
     border-right: 1px solid black;
 }
 
+.rightWithoutBord{
+    border-right: 0 !important;
+}
+
 .page_product_bottom .products_bottom {
     width: 100% !important;
 }

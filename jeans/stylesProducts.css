@@ -4,7 +4,6 @@ section {
     max-width: 73%;
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: 50px; */
 }
 
 .image {
@@ -12,7 +11,7 @@ section {
     /* border-right: 1px solid black; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .scrollImage img {
@@ -34,7 +33,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-left: 1px solid black;
+    /* border-left: 1px solid black; */
 }
 
 /* scroll images */
@@ -44,7 +43,6 @@ section {
     overflow-x: auto;
     /* horizontal scroll */
     scroll-snap-type: x mandatory;
-    /* gap: 20px; */
     padding: 20px 0;
     scrollbar-width: none;
     /* removed scrollbar firefox */
@@ -59,7 +57,6 @@ section {
 
 .scrollImage {
     flex: 0 0 100%;
-    /* image 100% width */
     scroll-snap-align: start;
     display: flex;
     justify-content: center;
@@ -79,8 +76,6 @@ section {
     overflow-y: auto;
     /* horizontal scroll */
     scroll-snap-type: x mandatory;
-    /* gap: 20px; */
-    /* padding: 20px 0; */
     scrollbar-width: none;
     /* removed scrollbar firefox */
 
@@ -93,17 +88,10 @@ section {
     object-fit: cover;
 }
 
-
-
-
 /* scroll text */
 .scrollText {
-    /* display: flex; */
     flex-direction: column;
     justify-content: start;
-    /* height: 100vh; */
-    /* margin-bottom: 0; */
-    /* position: absolute; */
     font-size: 20px;
     line-height: 20px;
     /* right: unset; */
@@ -201,6 +189,13 @@ h3 {
     color: #b9b9b9;
 }
 
+/* remove hover effect */
+.block.SOLD:hover {
+    background-color: transparent;
+    color: #b9b9b9;
+    cursor: default;
+}
+
 .AddToCart button {
     padding: 24px 20px;
     width: 100%;
@@ -250,7 +245,6 @@ h3 {
 .open {
     opacity: 1;
     padding: 20px 28px;
-    border-top: 1px solid black;
 }
 
 .icon {
@@ -273,7 +267,6 @@ h3 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* border-top: 1px solid black; */
 }
 
 .sizeFit .table {
@@ -328,12 +321,8 @@ h3 {
     padding: 20px;
 }
 
-/* .example .circles {
-    width: 100%;
-} */
-
-@media(min-width:767px) and (max-width:821px){
-    .circles{
+@media(min-width:767px) and (max-width:821px) {
+    .circles {
         flex-direction: column !important;
     }
 
@@ -392,7 +381,6 @@ h3 {
 .whithoutPad {
     padding: 0;
     display: flex;
-    /* max-height: fit-content; */
 }
 
 .blockBlack {
@@ -406,7 +394,6 @@ h3 {
     color: var(--white);
     border-top: 1px solid white;
     border-right: 1px solid white;
-    /* border-bottom: 1px solid white; */
 }
 
 .blockBlack h3 {
@@ -451,10 +438,8 @@ h3 {
     padding: 12px 0;
     font-size: 20px;
     line-height: 20px;
-    /* cursor: pointer; */
     background-color: var(--white);
     color: var(--white);
-    /* border-top: 1px solid black; */
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -477,7 +462,6 @@ h3 {
 
 @media(max-width:1025px) {
     section {
-        /* width: 100%; */
         max-width: 100%;
         flex-direction: column;
         margin: 0;
@@ -583,8 +567,6 @@ h3 {
 /*  carousel of text "You may also like "  */
 .carousel {
     max-width: 73%;
-    /* border-right: 1px solid var(--black);
-    border-left: 1px solid var(--black); */
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -602,8 +584,6 @@ h3 {
 .infinite-carousel {
     max-width: 100%;
     width: 100%;
-
-    /* border: 1px solid black; */
 }
 
 .infinite-carousel .carousel-inner {
@@ -630,18 +610,17 @@ h3 {
 
 .page_product_bottom {
     max-width: 73%;
-    /* border-right: 1px solid var(--black);
-    border-left: 1px solid var(--black); */
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 20px 0; */
 }
 
 /* media query */
 @media(max-width:1025px) {
-   
+
     .carousel {
         margin: 0;
         max-width: 100%;
@@ -657,12 +636,11 @@ h3 {
         max-width: 100%;
     }
 
-     .product{
+    .product {
         max-width: 100% !important;
     }
 
 }
-
 
 /* footer */
 footer {

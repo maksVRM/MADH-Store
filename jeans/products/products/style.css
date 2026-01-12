@@ -3,11 +3,7 @@
     height: 100vh;
 }
 
-
-
-
 @media(max-width:1024px) {
-
 
     /* content */
     section {
@@ -15,7 +11,6 @@
         width: 100%;
     }
 }
-
 
 /* content */
 .Content {
@@ -34,7 +29,6 @@
     flex-direction: row;
     justify-content: center;
 }
-
 
 .Title {
     display: flex;
@@ -60,7 +54,6 @@
     border: none;
     background-color: var(--white);
     cursor: pointer;
-
 }
 
 
@@ -135,9 +128,7 @@ a {
     .Content .listProducts {
         width: 100%;
     }
-
 }
-
 
 /* footer */
 footer {
@@ -152,17 +143,22 @@ footer {
 footer a,
 footer p {
     color: var(--black) !important;
-
 }
-
 
 .product {
     max-width: 35% !important;
-    /* height: 100% !important; */
     border-left: none !important;
     border-top: none !important;
     border-right: 1px solid black;
     display: grid;
+}
+
+.productTop{
+    border-top: 1px solid black !important;
+}
+
+.productBottom{
+    border-bottom: 1px solid black !important;
 }
 
 .product img {
@@ -236,8 +232,6 @@ nav a p {
     cursor: pointer;
 }
 
-
-
 .hide {
     transform: translateY(-100%);
     opacity: 0;
@@ -261,9 +255,7 @@ nav a {
 
 
 /* content */
-
 section {
-    /* height: 100vh; */
     max-width: 73%;
     border-right: 1px solid var(--black);
     border-left: 1px solid var(--black);
@@ -272,7 +264,6 @@ section {
 }
 
 /* section new */
-
 .container {
     max-height: 100%;
     height: 100vh;
@@ -285,7 +276,6 @@ section {
 
 .container a {
     display: flex;
-    /* justify-self: center; */
     text-decoration: none;
     font-family: 'Quicksand-Medium', sans-serif;
 }
@@ -303,7 +293,6 @@ section {
 .container h3 {
     display: flex;
     justify-content: center;
-    /* margin-top: 45vh; */
     color: var(--white);
     transition: 0.7s;
     font-size: 100px;
@@ -316,9 +305,7 @@ section {
     opacity: 0.8;
 }
 
-
 /* section with 2 images */
-
 .no_bg {
     background-image: none;
     display: flex;
@@ -327,7 +314,6 @@ section {
 }
 
 /* section text - image women */
-
 .women {
     max-width: 100%;
 }
@@ -348,7 +334,6 @@ section {
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
-    /* cursor: pointer; */
     height: auto;
 }
 
@@ -357,14 +342,7 @@ section {
     opacity: 0.5;
 }
 
-/* section 2 images */
-
-.man_images {
-    /* margin-bottom: 260px; */
-}
-
 /* section 3 images -   */
-
 .forJeans {
     display: flex;
     flex-direction: column;
@@ -375,13 +353,11 @@ section {
     max-width: 100%;
     justify-self: center;
     justify-content: center;
-
 }
 
 .images {
     display: flex;
     flex-direction: row;
-    /* z-index: 0; */
 }
 
 .images img {
@@ -396,13 +372,10 @@ section {
     flex-direction: column;
     margin-top: 20px;
 
-
     text-transform: uppercase;
-    /* margin-top: -76%; */
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
-
 }
 
 /* carousel */
@@ -451,8 +424,6 @@ section {
     }
 }
 
-
-
 /* discription */
 .discription {
     display: flex;
@@ -476,7 +447,6 @@ section {
     overflow: hidden;
 }
 
-/* Лента изображений */
 .slider {
     display: flex;
     transition: transform 0.4s ease;
@@ -490,8 +460,7 @@ section {
     background: #fff;
 }
 
-
-/* Стрелки */
+/* Arrows */
 .prev,
 .next {
     position: absolute;
@@ -513,7 +482,6 @@ section {
 }
 
 .circles {
-    /* margin-top: 105px; */
     margin-top: 62px;
     margin-left: 20px;
 }
@@ -521,7 +489,6 @@ section {
 .product {
     flex: 0 0 35%;
 }
-
 
 @media(max-width:1025px) {
     .products_bottom {

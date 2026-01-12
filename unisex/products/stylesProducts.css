@@ -29,21 +29,13 @@ section {
     border-top: none;
 }
 
-/* img {
-    height: 100vh;
-} */
-
 .settings_of_jeans {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-left: 1px solid black;
+    /* border-left: 1px solid black; */
 }
-
-
-
-
 
 /* scroll images */
 
@@ -52,7 +44,6 @@ section {
     overflow-x: auto;
     /* horizontal scroll */
     scroll-snap-type: x mandatory;
-    /* gap: 20px; */
     padding: 20px 0;
     scrollbar-width: none;
     /* removed scrollbar firefox */
@@ -67,7 +58,6 @@ section {
 
 .scrollImage {
     flex: 0 0 100%;
-    /* image 100% width */
     scroll-snap-align: start;
     display: flex;
     justify-content: center;
